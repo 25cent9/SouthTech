@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 11/4/14-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Customer Ordering</title>
+	<script type="text/javascript">
+	function processOrder(){
+		var BR="<br />";
+		var nums;
+		var fName=document.getElementById('fname').value;
+		var lName=document.getElementById('lname').value;
+		var ship=document.getElementById('abb').value;
+		var name="";
+		var nameValidate="T";
+		var packageValidate="T";
+		var alpha=/^[a-zA-Z0-9]+$/;
+		
+		if(fName.lenth==0 || !fName.match(alpha)){
+			alert("Please enter a valid first name");
+		}
+		
+		else if(lName.lenth==0 || !lName.match(alpha)){
+			alert("Please enter a valid last name");
+		}
+		else{
+			validateName(fName,lName);
+		}
+	}
+	
+		function validateName(fName,lName){
+			if(isNaN(fName) && isNaN(lName)){
+				name=fName+" "+lName;
+				validatePackages(document.getElementById('number').value);
+				return name;
+				validatePackages(document.getElementById('number').value);
+			}			
+		}
+		
+	
+	function validatePackages(pack){
+			nums=/^[0-9]+$/;
+			var price=2.50;
+			if(pack>5){
+				price=2.00;
+			}
+			
+			if(pack==0){
+				document.getElementById('order').value="I'm sorry that you were not able to find anything to order.";
+			}
+			else if(isNaN(pack) || parseFloat(pack) != parseInt(pack) || pack<0){
+				alert("Please enter a valid number");
+			}
+			else{
+				process(pack,price);
+			}
+	}
+	
+	function process(pack,price,ship){
+	var ship=document.getElementById('abb').value;
+		var totPrice=pack*price;
+		
+		if(ship=="ID" || ship=="id"){
+			document.getElementById('order').value="Thank you "+name+" for your order. Your total price will be $"+totPrice.toFixed(2)+". Your shipping is free to Idaho.";
+		}
+		else{
+			document.getElementById('order').value="Thank you "+name+" for your order. Your total price will be $"+totPrice.toFixed(2)+". We will ship to "+ship.toUpperCase(2)+" for $4.00";
+		}
+	}
+	</script>
+</head>
+
+
+<body>
+<form id="customerInput" name="customerInput">
+	<h2>Welcome to Bulk is Best, loyal and dedicated customer</h2>
+	
+	First name: <input type="text" id="fname" /><br />
+	Last name: <input type="text" id="lname" /><br />
+	Quantity of packages: <input type="text" id="number" size="1" /><br />
+	Two-letter state abbreviation in which you wish to ship: (Free shipping to Idaho)<input type="text" id="abb" size="2"/>
+	<br />
+	<input type="button" value="Process Order" onClick="processOrder();"/>
+	<br />
+	<br />
+	Your receipt:<br /> 
+	<textarea rows="5" cols="50" readonly id="order"></textarea>
+</form>
+</body>
+</html>

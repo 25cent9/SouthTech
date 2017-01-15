@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 12/8/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Such Gamble </title>
+	<link rel="stylesheet" type="text/css" href="css/ex.css" />
+	<link rel="shortcut icon" href="pics/favicon.ico" />
+	<script type="text/javascript">
+	
+	</script>
+</head>
+
+<body>
+<div>
+<h2>Instructions</h2>
+	Use the "Start" button to start spinning and the "Stop" button to stop spinning. The point system is as followed.
+	<ul>
+		<li>Horizontal: 10 Points</li>
+		<li>Diagonal: 20 Points</li>
+		<li>Free space randomly appears on board every four turns</li>
+			<ul>
+				<li>2 matching and a free space, horizontal: 10 points</li> 
+				<li>2 matching and a free space, diagonal: 20 points</li> 
+			</ul>
+	</ul>
+<form>
+	<input type="button" onclick="startSpin();" id="start" value="Start Spin"/>
+	
+	<input type="button" onclick="stopSpin();" value="Stop Spin" id="stop" disabled /><br />
+	Your points: <input type="text" id="score" size="2" readonly />
+</form>
+</div>
+
+<div>
+<table>
+	<caption><h2>Such Gamble</h2></caption>
+	<tr>
+		<td><img src="pics/dogecoin.png" alt="doge coin" id="coin1X1" width="300" height="300"/></td>
+		<td><img src="pics/dogecoin.png" alt="doge coin" id="coin1X2" width="300" height="300"/></td>
+		<td><img src="pics/dogecoin.png" alt="doge coin" id="coin1X3" width="300" height="300"/></td>
+	</tr>
+	<tr>
+		<td><img src="pics/dogecoin1.png" alt="doge coin" id="coin2X1" width="300" height="300"/></td>
+		<td><img src="pics/dogecoin1.png" alt="doge coin" id="coin2X2" width="300" height="300"/></td>
+		<td><img src="pics/dogecoin1.png" alt="doge coin" id="coin2X3" width="300" height="300" /></td>
+	</tr>
+	<tr>
+		<td><img src="pics/dogecoin2.png" alt="doge coin" id="coin3X1" width="300" height="300"/></td>
+		<td><img src="pics/dogecoin2.png" alt="doge coin" id="coin3X2" width="300" height="300"/></td>
+		<td><img src="pics/dogecoin2.png" alt="doge coin" id="coin3X3" width="300" height="300"/></td>
+	</tr>
+	
+	
+</table>
+</div>
+
+
+<script type="text/javascript" src="java.js"></script>
+</body>
+
+</html>

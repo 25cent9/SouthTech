@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>JSON</title>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+
+<body>
+	<h2>JSON Object Creation in JavaScript</h2>
+	<p id="para">Welcome</p>
+	
+	<script type="text/javascript">
+		var text = '{"name": "John Johnson","street":"Osleo West","phone":"555-123-4567"}';
+		var obj = JSON.parse(text);
+		document.getElementById('para').innerHTML = obj.name + "<br />" + obj.street + "<br />" + obj.phone;
+	</script>
+</body>
+
+</html>

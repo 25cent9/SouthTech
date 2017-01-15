@@ -1,0 +1,6 @@
+H:\DisplayFile\DisplayFile\bin\Debug\DisplayFile.exe.config
+H:\DisplayFile\DisplayFile\obj\Debug\DisplayFile.csprojResolveAssemblyReference.cache
+H:\DisplayFile\DisplayFile\bin\Debug\DisplayFile.exe
+H:\DisplayFile\DisplayFile\bin\Debug\DisplayFile.pdb
+H:\DisplayFile\DisplayFile\obj\Debug\DisplayFile.exe
+H:\DisplayFile\DisplayFile\obj\Debug\DisplayFile.pdb

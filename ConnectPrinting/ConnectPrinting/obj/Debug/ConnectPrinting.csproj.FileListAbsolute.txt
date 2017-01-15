@@ -1,0 +1,2 @@
+H:\ConnectPrinting\ConnectPrinting\bin\Debug\ConnectPrinting.exe.config
+H:\ConnectPrinting\ConnectPrinting\obj\Debug\ConnectPrinting.csprojResolveAssemblyReference.cache

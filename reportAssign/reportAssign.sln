@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reportAssign", "reportAssign\reportAssign.vcxproj", "{12FD79F9-E3E5-4DFE-BC86-423A75F0BD29}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "report", "report\report.vcxproj", "{FDD398B9-4E64-46D7-BBAE-BB4F8AA64F5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12FD79F9-E3E5-4DFE-BC86-423A75F0BD29}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12FD79F9-E3E5-4DFE-BC86-423A75F0BD29}.Debug|Win32.Build.0 = Debug|Win32
+		{12FD79F9-E3E5-4DFE-BC86-423A75F0BD29}.Release|Win32.ActiveCfg = Release|Win32
+		{12FD79F9-E3E5-4DFE-BC86-423A75F0BD29}.Release|Win32.Build.0 = Release|Win32
+		{FDD398B9-4E64-46D7-BBAE-BB4F8AA64F5E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDD398B9-4E64-46D7-BBAE-BB4F8AA64F5E}.Debug|Win32.Build.0 = Debug|Win32
+		{FDD398B9-4E64-46D7-BBAE-BB4F8AA64F5E}.Release|Win32.ActiveCfg = Release|Win32
+		{FDD398B9-4E64-46D7-BBAE-BB4F8AA64F5E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> If stmt examples </title>
+	<script type="text/javascript">
+	/*	Single outcome if statement
+		pseudo code
+	
+		Display "Enter a test score"
+			input testScore
+		if testScore >= 60 then
+			dsiplay "That is a passing grade"
+		end if
+		
+	
+	var testScore=prompt("Enter a test score");
+	if(testScore>=60){
+		alert("That is a passing grade");
+	}
+	alert("Program end");
+	*/
+	/*
+	Dual outcome
+	pseudo code
+		Display "Enter a test score"
+			input testScore
+		if testScore >= 60 then
+			dsiplay "That is a passing grade"
+		else
+			Display "That is a failing grade"
+		end if
+	*/
+	/*
+	var testScore=prompt("Enter a test score");
+	if(testScore>=60){
+		alert("That is a passing grade");
+	}
+	else{
+		alert("That is a failing grade");
+	}
+	alert("Program end");
+	*/
+	/*
+	pseudocode
+	Display "Enter the water level in liters: "
+	if 
+		20 liters or higher, display message to empty bucket
+	if not, display message to check again in 10 minutes
+	end if
+	
+	*/
+	var liters=prompt("How many liters of water are in the bucket");
+	if (liters>=20){
+		alert("Please empty your bucket");
+	}
+	else{
+		alert("Check back in 10 minutes");
+	}
+	
+	/*
+	Sales tax lookup
+		Display "Enter the amount of purchase, in cents:"
+		input cents
+		
+		if cents<=7 then
+			salesTax will equal 0
+		else
+			if cents <=21 then 
+				salesTax will equal 1
+		else 
+			if cents <=35 then
+				salesTax will equal 2
+		else 
+			if cents <=49 then
+				salesTax will equal 3
+		else 
+			if cents <=64 then
+				salesTax will equal 4
+		else 
+			if cents <=78 then
+				salesTax will equal 5
+		else 
+			if cents <=92 then
+				salesTax will equal 6
+		else 
+			if cents <=99 then
+				salesTax will equal 7
+		end if
+		
+		if cents is <=99 then
+			Display "Sales tax is: "+salesTax+"cents."
+		else 
+			display "Enter an amount less than $1.00"
+		end if
+		
+	*/
+	
+	var cents=prompt("Enter the amount of purchase in cents: ");
+	var salesTax=0;
+	
+	if(cents<=7){
+		salesTax=0;
+	}
+	else if(cents<=21){
+		salesTax=1;
+	}
+	else if(cents<=35){
+		salesTax=2;
+	}
+	else if(cents<=49){
+		salesTax=3;
+	}
+	else if(cents<=64){
+		salesTax=4;
+	}
+	else if(cents<=78){
+		salesTax=5;
+	}
+	else if(cents<=92){
+		salesTax=6;
+	}
+	else if(cents<=99){
+		salesTax=7;
+	}
+	
+	if(cents<=99){
+		alert("Sales tax is: "+salesTax+" cents.");
+	}
+	else{
+		alert("Enter an amount less than $1.00");
+	}
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+H:\StudentMembers\StudentMembers\bin\Debug\StudentMembers.exe.config
+H:\StudentMembers\StudentMembers\bin\Debug\StudentDataBase.accdb
+H:\StudentMembers\StudentMembers\bin\Debug\StudentMembers.exe
+H:\StudentMembers\StudentMembers\bin\Debug\StudentMembers.pdb
+H:\StudentMembers\StudentMembers\obj\Debug\StudentMembers.csprojResolveAssemblyReference.cache
+H:\StudentMembers\StudentMembers\obj\Debug\StudentMembers.Form1.resources
+H:\StudentMembers\StudentMembers\obj\Debug\StudentMembers.Properties.Resources.resources
+H:\StudentMembers\StudentMembers\obj\Debug\StudentMembers.csproj.GenerateResource.Cache
+H:\StudentMembers\StudentMembers\obj\Debug\StudentMembers.exe
+H:\StudentMembers\StudentMembers\obj\Debug\StudentMembers.pdb
+H:\StudentMembers\StudentMembers\bin\Debug\member.accdb

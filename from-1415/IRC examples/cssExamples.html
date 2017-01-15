@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 1-26-14 -->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> CSS Ex.</title>
+	<script type="text/JavaScript">
+	
+	</script>
+	<link href="ex.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	@font-face{
+		font-family: soopaFresh;
+		src: url(soopafresh.ttf);
+	}
+	@font-face{
+		font-family: kiddie;
+		src: url(crayons.ttf);
+	}
+	/* Embedded CSS */
+		.lawn{
+			color: #00ff00;
+		}
+		#seriftx{
+			font-family: Garamond; 
+		}
+		#sansseriftx{
+			font-family: Sans-serif; 
+		}
+		#monospacetx{
+			font-family: monospace; 
+		}
+		#soopa{
+			font-family: soopaFresh;
+		}
+		#crayons{
+			font-family: kiddie;
+		}
+		.bld{
+			font-weight: bold;
+		}
+		.ital{
+			font-style: italic;
+		}
+		.toolbar li{
+			display: inline;
+			background-color: #1234ff;
+			border: 1px solid;
+			border-color: #F3F3F3;
+			margin: 2px;
+			padding: .5em;
+		}
+		#cola{
+			float: left;
+			width: 30%;
+			background-color: lightskyblue;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		#colb{
+			float: left;
+			width: 30%;
+			background-color: yellow;
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+		#colc{
+			float: left;
+			width: 30%;
+			background-color: purple;
+		}
+		#abs{
+			position: absolute;
+			left: 120px;
+			top: 150px;
+		}
+		#oflowscroll{
+			width: 150px;
+			height: 150px;
+			background-color: orange;
+			overflow: scroll;
+		}
+		#oflowhide{
+			width: 150px;
+			height: 150px;
+			background-color: green;
+			overflow: hidden;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Trusty Lawn Care, Inc.</h1>
+	<p id="slogan">
+		*Inset Slogan*
+	</p>
+	<p>
+		Trusty <span class="lawn">Lawn</span> Care can keep your <span class="lawn">lawn</span> looking lush and vigorous all season. We use only natural fertilizers, mulches, and <!-- Inline CSS --><span style="color: brown">soils</span> to boost the health of your turf.
+	</p>
+	<hr />
+	<p id="seriftx">
+		*Inset Slogan*
+	</p><br />
+	<p id="sansseriftx">
+		*Inset Slogan*
+	</p><br />
+	<p id="monospacetx">
+		*Inset Slogan*
+	</p>
+	<p id="soopa">
+		*Inset Slogan*
+	</p>
+	<p id="crayons">
+		*Inset Slogan*
+	</p>
+	<hr />
+	
+	<!-- Inline flow: forces no new lines before or after the inline element, but simply places the element between the content and after the inline element. -->
+	<p>This is a dumb paragraph in which a word is <span class="bld"> bold</span> and another is <span class="ital">italicized</span>.</p>
+	<!-- Block flow: an element is separated from other elements by new line above and below, and fills from left to right the horizontal extent where it appears. -->
+	<h3>Natural Block Flow</h3>
+	<ul>
+		<li>Auto-mobile</li>
+		<li>Bicycle</li>
+		<li>Scooter</li>
+		<li>Taxi</li>
+		<li>Walk</li>
+		<li>Boat</li>
+	</ul>
+	
+	<h3>CSS Block Flow</h3>
+	<ul class="toolbar">
+		<li>Auto-mobile</li>
+		<li>Bicycle</li>
+		<li>Scooter</li>
+		<li>Taxi</li>
+		<li>Walk</li>
+		<li>Boat</li>
+	</ul>
+	<hr />
+	<h1>Float Positioning</h1>
+	<p id="cola">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</p>
+	<p id="colb">Column 2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+</p>
+<p id="colc" >
+	Column 3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+</p>
+<!-- Stops the float of text -->
+<p style="clear: both;">
+	Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+</p>
+
+<hr /><!-- Absolute positioning: an element is removed from its position within the body of a document and placed at a geometric position in the display -->
+
+<h2 id="abs">This is a heading with an absolute position</h2>
+<hr />
+<!-- Overflow: Scrolling- content stays within the box of the element but displays a scrollbar and no text appears outside the box
+	hidden: any text outside of the box is invisible to the user
+	visible: (default) all text is visible and ant text that does not fit is continued after the box-->
+	
+<p id="oflowscroll">
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+</p>
+
+<p id="oflowhide">
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+</p>
+</body>
+
+</html>

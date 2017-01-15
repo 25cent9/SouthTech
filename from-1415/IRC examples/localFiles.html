@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Acessess Local Files</title>
+	<script type="text/javascript">
+		function acknowledge(filehandle){
+			var size = filehandle.size;
+			var fname = filehandle.name;
+			var msg = "You have chosen the file '" + fname + "'. This apperars to be a recognized image, totaling '" + size +"' bytes in size.";
+			alert(msg);
+		}
+		function complain(fnam){
+			var msg = "The file named '" + fnam + "' does not appear to have an acceptable extension. ";
+			alert(msg);
+			document.getElementById('file').value="";
+		}
+		function handle_file_sel(item){
+			var f = item.files[0];
+			var fnam = f.name;
+			var last_index = fnam.lastIndexOf('.');
+			if(last_index == -1){
+				complain(fnam);
+				return;
+			}
+			var ext = fnam.substr(last_index + 1);
+			if(ext.toLowerCase() in {'gif': '','jpg': '','png': '','tif':''}){
+				acknowledge(f);
+			}
+			else {
+				complain(fnam);
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h1>JavaScript Assesses Local Files</h1>
+	<input type="file" onchange="handle_file_sel(this);" id="file"/>
+</body>
+
+</html>

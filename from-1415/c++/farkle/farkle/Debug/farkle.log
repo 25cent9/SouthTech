@@ -1,0 +1,20 @@
+﻿Build started 5/6/2015 9:44:08 AM.
+     1>Project "H:\c++\farkle\farkle\farkle.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\farkle.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt farkle.cpp
+         farkle.cpp
+     1>h:\c++\farkle\farkle\farkle.cpp(34): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\farkle.exe.embed.manifest.res" Debug\farkle_manifest.rc 
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\c++\farkle\Debug\farkle.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\farkle.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\c++\farkle\Debug\farkle.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\c++\farkle\Debug\farkle.lib" /MACHINE:X86 Debug\farkle.exe.embed.manifest.res
+         Debug\farkle.obj
+     1>farkle.obj : error LNK2001: unresolved external symbol "void __cdecl checkDi(int)" (?checkDi@@YAXH@Z)
+     1>H:\c++\farkle\Debug\farkle.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "H:\c++\farkle\farkle\farkle.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.12

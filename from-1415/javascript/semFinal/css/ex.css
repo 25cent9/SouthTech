@@ -1,0 +1,16 @@
+body{
+	background-image: url("../pics/back.png");
+	background-attachment: fixed;
+	font-family: Comic Sans Ms, Times New Roman, Arial;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+table,tr,td{
+	size: 50%;
+	border: 5px ridge black;
+	border-collapse: collapse;
+	
+}
+div{
+float: left;
+margin-right: 2%;
+}

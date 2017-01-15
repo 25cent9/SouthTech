@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Cookie Demonstration</title>
+	<script type="text/JavaScript">
+		//Store the "uname=" and "secret=" cookies.
+		//"secret=" dosen't do anything, it's just there to show a session cookie and that document.cookies can hold more than one cookie
+	</script>
+</head>
+
+<body>
+	<h2>Cookie Demo</h2>
+	<script type="text/JavaScript">
+		var allCookies = document.cookie;
+		var start = allCookies.indexOf("uname=");
+		if(start != -1){
+			start += 6;
+			var end=allCookies.indexOf(";", start);
+			if(end == -1){
+				end = allCookies.length;
+			}
+			var theName = allCookies.substring(start, end);
+			document.write("<p>Welcome back "+ theName +"!</p> ");
+			document.write("<p><input type='button' value='Forgit it man' onclick='deleteName();' /></p> ");
+		}
+		else{
+			document.write("<p> Hello - I dont think that we've met</p>");
+			document.write("<p>Please tell me your name and favorite color</p>");
+			document.write("<p><form action=\"dummy\">");
+			document.write("Name: <input type='text' name='username' /><br />");
+			document.write("Color: <input type='text' name='color' />");
+			document.write("<input type='button' value='Enter' onclick='storeName(this.form)' />");
+			document.write("</form></p>");
+		}
+		function storeName(theForm){
+			var theName = theForm.username.value;
+			var color = theForm.color.value;
+			var expire = new Date();
+			expire.setMonth(expire.getMonth() + 6);
+			var expireGMT = expire.toGMTString();
+			document.cookie = "uname=" + theName+"; expires="+expireGMT;
+			alert("Hi "+ theName+" I'll rememebr you next time you visit");
+			document.cookie = "secret=shh";
+			document.cookie = "color="+color;
+		}
+
+		function deleteName(){
+			var expire = new Date();
+			expire.setDate(expire.getDate() -1);
+			var expireGMT = expire.toGMTString();
+			document.cookie = "uname=; expires="+expireGMT;
+		}
+		
+	
+	</script>
+	<p>
+	<input type="button" value="show cookie setting" onclick="alert(document.cookie);">
+	</p>
+	
+	
+</body>
+
+</html>

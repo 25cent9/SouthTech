@@ -1,0 +1,139 @@
+@Java
+method gettoBridge(){
+   if(isClear(AHEAD)){
+      hop();
+   }
+   if(isFacing(SOUTH) && isClear(LEFT) && hasFlower()){ 
+      turn(LEFT);
+   }
+   if(!isClear(AHEAD)){
+      turnRight();
+      turnLeft();
+   }
+   else if(isFacing(SOUTH) && isClear(RIGHT) && !hasFlower()){
+      turn(RIGHT);
+   }
+   if(isJeroo(AHEAD) && hasFlower()){        
+        give(AHEAD);
+      }
+
+}
+
+
+method turnRight(){
+   if(isClear(RIGHT) && isWater(AHEAD)){
+      turn(RIGHT);
+   }
+
+}
+
+method turnLeft(){
+   if(isWater(AHEAD) && isClear(LEFT)){
+      turn(LEFT);
+   }
+
+}
+
+
+method deadEnd(){
+   if(isWater(LEFT) && isWater(RIGHT)&& isWater(AHEAD)){
+      turn(LEFT);
+      turn(LEFT);
+   }
+}
+
+method goHome(){
+       if(isJeroo(AHEAD) && hasFlower()){        
+         give(AHEAD);
+       } 
+       if(isWater(LEFT) && isWater(RIGHT)){
+          if(isFacing(EAST) || isFacing(WEST)){
+             turn(LEFT);
+             turn(LEFT);
+          }
+       }
+       if(isClear(AHEAD)){
+          hop();
+       }
+       else if(isClear(AHEAD) && isWater(LEFT) && isWater(RIGHT)){
+          turn(LEFT);
+          turn(LEFT);
+          if(isClear(AHEAD)){
+             hop();
+          }
+          else if(isWater(AHEAD) && isWater(LEFT) && isWater(RIGHT) && isFacing(NORTH)){
+             turn(LEFT);
+          }
+       }
+       if(isWater(AHEAD) && isFacing(WEST)){
+            turn(RIGHT);
+       }
+       else if(isWater(AHEAD) && isFacing(EAST)){
+          turn(LEFT);
+       }
+       if(isWater(AHEAD) && isFacing(EAST)){
+          turn(LEFT);
+          
+       }
+       else if(isWater(AHEAD) && !hasFlower() && !isClear(LEFT)){
+          turn(RIGHT);
+       }
+       else if(!isClear(AHEAD)){
+         turnLeft();
+         turnRight();
+       }
+       if(isClear(RIGHT) && isClear(LEFT) && isFacing(WEST)){
+         turn(RIGHT);
+      }
+      if(isClear(LEFT) && isClear(RIGHT) && isFacing(EAST)){
+         turn(LEFT);
+      }
+      if(isWater(AHEAD) && isFacing(WEST)){
+         turn(RIGHT);
+         turn(RIGHT);
+      }
+      if(isFacing(NORTH) && isWater(AHEAD) && isClear(RIGHT)){
+         turn(RIGHT);
+      }
+      if(isFacing(NORTH) && isWater(RIGHT) && isWater(AHEAD)){
+         turn(LEFT);
+      }
+       
+   
+}
+@@
+//Innocent Niyibizi
+//Date: 11-21-13
+//Purpose: To have Tom and Tammy to meet at the bridge so Tom can propse to Tammy
+
+method main(){
+Jeroo Tom = new Jeroo(0,0,EAST,1);      //Starting Tom at his home at (0,0) facing North 
+Jeroo Tammy = new Jeroo(0,23,WEST);     //Starting Tammy at her home at (0,23) facing South
+
+
+while(Tom.isClear(AHEAD) || Tom.isClear(RIGHT)){          //While loop to run while there is nothing in front of Tom
+   
+   Tom.gettoBridge();                            
+   
+   while(Tom.isWater(RIGHT)&& Tom.isWater(LEFT) && Tom.isClear(AHEAD) && Tom.isFacing(EAST)){   //While loop to start Tammy's journey to the bridge
+      Tammy.gettoBridge();     //Jeroo method to get Tammy to the bridge         
+   }
+}
+   
+while(Tom.isFacing(NORTH) || Tom.isJeroo(AHEAD) || Tom.isFacing(SOUTH) || Tom.isFacing(WEST) || !Tom.isWater(LEFT)){  //While loop to run while Tom is not at (0,0) facing East
+   Tom.goHome();             //Jeroo method to get the Jeroo home
+   
+}
+   
+
+while(Tammy.isWater(LEFT) && Tammy.isWater(RIGHT) || Tammy.isFacing(NORTH) || Tammy.isFacing(SOUTH) || Tammy.isFacing(SOUTH) || !Tammy.isWater(RIGHT) || Tammy.isClear(LEFT) && !Tammy.isFacing(WEST)){  //While loop to run while Tammy is not at (0,23) facing West   
+   
+   Tammy.goHome();          //Jeroo method to get Tammy home
+      
+}
+   
+   
+
+
+
+}

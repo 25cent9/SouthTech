@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Local Storage</title>
+	<script type="text/JavaScript">
+		
+		function clickCounter(){
+			if(typeof(Storage) !== "undefined"){
+				if(localStorage.clickCount){
+					localStorage.clickCount = Number(localStorage.clickCount)+1;
+				}
+				else{
+					localStorage.clickCount = 1;
+				}
+				document.getElementById('result').innerHTML = "You have clicked the button "+localStorage.clickCount +" time(s).";
+			}
+			else{
+				document.getElementById('result').innerHTML = "Sorry your browser does not support web storage...";
+			}
+		
+		}
+		function clearLocalStorage(){
+			if(typeof(Storage) !== "undefined"){
+				if(localStorage.clickCount){
+					localStorage.clickCount = Number(localStorage.clickCount)/localStorage.clickCount;
+				}
+				else{
+					localStorage.clickCount = 1;
+				}
+				document.getElementById('result').innerHTML = "You have clicked the button "+localStorage.clickCount +" time(s).";
+			}
+			else{
+				document.getElementById('result').innerHTML = "Sorry your browser does not support web storage...";
+			}
+		
+		}
+	</script>
+</head>
+
+<body>
+	
+	<p><button onclick="clickCounter()">Click Me</button></p>
+	<div id="result"></div>
+	<p>Click the button to see the counter increase</p>
+	<p>Close the browser tab (or window) and try again, and the counter will continue to count (is not reset). </p>
+	<p><button onclick="clearLocalStorage()">Click me to clear storage</button></p>
+</body>
+
+</html>

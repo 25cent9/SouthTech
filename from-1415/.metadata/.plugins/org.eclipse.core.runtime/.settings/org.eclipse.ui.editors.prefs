@@ -1,0 +1,24 @@
+#Thu Apr 02 09:45:20 CDT 2015
+AbstractTextEditor.Color.Background=0,43,54
+javaScriptOccurrenceIndicationColor=7,54,66
+eclipse.preferences.version=1
+writeOccurrenceIndicationColor=7,54,66
+AbstractTextEditor.Color.Foreground.SystemDefault=false
+AbstractTextEditor.Color.Foreground=131,148,150
+AbstractTextEditor.Color.SelectionBackground=7,54,66
+overviewRuler_migration=migrated_3.1
+lineNumberRuler=true
+deletionIndicationColor=224,226,228
+searchResultIndicationColor=7,54,66
+currentLineColor=0,43,54
+PHPReadOccurrenceIndicationColor=7,54,66
+AbstractTextEditor.Color.SelectionForeground=147,161,161
+filteredSearchResultIndicationColor=7,54,66
+PHPWriteOccurrenceIndicationColor=7,54,66
+printMarginColor=101,123,131
+AbstractTextEditor.Color.Background.SystemDefault=false
+occurrenceIndicationColor=7,54,66
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+lineNumberColor=101,123,131
+AbstractTextEditor.Color.FindScope=224,226,228
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false

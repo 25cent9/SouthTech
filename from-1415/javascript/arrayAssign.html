@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 12/2/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Array Assign </title>
+	<script type="text/javascript">
+	
+	var style = new Array("Jazz","Blues");
+	style.push("Rock n Roll");
+	document.write(style[style.length-1]+"<br />");
+	document.write(style[0]);
+	
+	var randomInt;
+	randomInt=Math.floor(Math.random()*style.length-1-0+1)+0;
+	document.write("<br />"+style[randomInt]+" "+randomInt);
+	
+	var user=prompt("Please enter 'Blues', 'Rock n Roll', or 'Jazz'");
+	validate(user.toUpperCase());
+	function validate(value){
+		while(value!="BLUES" && value!=="ROCK N ROLL" && value!=="JAZZ"){
+			alert("You have entered an invalid style of music");
+			value=prompt("Please enter a new style of music, 'Blues', 'Rock n Roll', or 'Jazz'");
+			value=value.toUpperCase();
+		}
+		user=value.toLowerCase();
+	}
+	user=user.toUpperCase(1);
+	for(var x=0; x<=style.length-1; x++){
+		style[x];
+		if(style[x].toUpperCase()==user){
+			document.write("<br />"+x);
+			break;
+		}
+	}
+	</script>
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>

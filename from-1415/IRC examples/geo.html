@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 3/18/15-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Geolocation</title>
+	
+</head>
+
+<body>
+	<p id="userDemo">Get User Location Demo:</p>
+	<button onclick="getuserLocation();">Test Location</button>
+	<div id="mapholder"></div>
+	
+	<script type="text/JavaScript">
+		var x=document.getElementById('userDemo');
+		function getuserLocation(){
+			if(navigator.geolocation){
+				//x.innerHTML = 'Geolocation API is supported by this browser.';
+				navigator.geolocation.getCurrentPosition(showuserPosition,showbrowserError);
+			}
+			else{
+				x.innerHTML = 'Geolocation API is not supported by this browser';
+			}
+		}
+		
+		function showuserPosition(position){
+			var lation = postion.coords.latitude+","+positon.coords.longitude;
+			var img_url = "http://maps.googleapis.com/api/staticmap?center="+lation+"&zoom=14&size=1000x900&sensor=false";
+			document.getElementById("mapholder").innerHTML='<img src="'+img_url+'">';
+		}
+		function showbrowserError(error){
+			switch(error.code){
+				case error.PERMISSION_DENIED:
+					x.innerHTML="User denied the request for Geolocation.";
+					break;
+				case error.POSITION_UNAVALIABLE:
+					x.innerHTML='Location information is unavaliable.';
+					break;
+				case error.TIMEOUT:
+					x.innerHTML="The request to get user location timed out.";
+					break;
+				case error.UNKOWN_ERROR	:
+					x.innerHTML="An unknown error has occured.";
+					break;
+			}
+		}
+	</script>
+</body>
+
+</html>

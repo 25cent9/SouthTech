@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Hi-Low Game </title>
+	<script type="text/javascript">
+	var secretNumber=0; //Global variable
+	var cnt=0;
+	var msg="";
+	function getRandomInt(min, max){
+		secretNum=Math.floor(Math.random()*max-min+1)+min;
+		document.getElementById('userNum').focus;
+	
+	}
+	function checkIt(){
+		var user=document.getElementById('userNum').value;
+		cnt++;
+		if(user==secretNum){
+			alert("Congrats, you guessed the number in"+cnt.toString()+" times");
+		}
+		else if(user>secretNum){
+			alert();
+		}
+	
+	}
+	function resetGame(){
+		cnt=0;
+		document.getElementById('guesses').value="";
+	
+	}
+	</script>
+</head>
+
+<body onLoad="getRandomInt(1, 100)">
+<h1>Guess The Number</h1>
+<form>
+Input your guess: <input type="text" id="userNum" size="2"/><br /><br />
+<input type="button" value="Check your Guess" onClick="checkIt();"/>
+<input type="button" onClick="resetGame();" value="Play again"/><br /><br />
+Your previous guesses<br />
+<textarea readonly rows="10" cols="10" id="guesses"></textarea>
+</form>
+
+
+
+</body>
+
+</html>

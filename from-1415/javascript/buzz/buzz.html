@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Buzz </title>
+	<script type="text/javascript">
+		/*
+			Name: Innocent Niyibizi
+			Date: 10/3/14
+			Purpose: To calculate the pounds per day someone will need to collect in order to meet their goal of total pounds in their set time period
+		
+		*/
+		//Declare variables
+		var lbsPerDay=0;
+		var numDays=0;
+		var totLbs=0;
+		
+		//Getting inputs
+		numDays=prompt("Enter the number of days that you will be collecting");
+		totLbs= prompt("Enter the total number of pounds that you wish to collect");
+		
+		//Calculating punds per day
+		lbsPerDay= parseInt(totLbs)/parseInt(numDays);
+	</script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//Displaying outcome
+		document.write("You will need to collect "+lbsPerDay+"lbs per day to reach your total of "+totLbs+"lbs in "+numDays+" days");
+
+	</script>
+
+
+</body>
+
+</html>

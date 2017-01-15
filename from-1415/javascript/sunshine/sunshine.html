@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Sunshine </title>
+	<script type="text/javascript">
+		//Author: Innocent Niyibizi
+		//Date: 10/3/14
+		//Purpose: Find the average and total number of customers over 4 hours
+		
+		//Declare variables
+		
+		var totCust=0;
+		var avgCust=0;
+		var numHours=4;
+		var cnst1, cnst2, cnst3, cnst4 = 0;
+		
+		//Get inputs
+		cnst1= prompt("What was the total number of customers for the first hour?",0);
+		cnst2= prompt("What was the total number of customers for the second hour?",0);
+		cnst3= prompt("What was the total number of customers for the third hour?",0);
+		cnst4= prompt("What was the total number of customers for the fourth hour?",0);
+	
+		//Calculate total
+		totCust= parseInt(cnst1)+parseInt(cnst2)+parseInt(cnst3)+parseInt(cnst4);
+		avgCust= totCust/numHours;
+		
+	</script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//Displaying out puts
+		document.write(" The total number of customers was "+totCust+"<br />");
+		document.write(" The average number of customers was "+avgCust);
+
+	
+	</script>
+</body>
+
+</html>

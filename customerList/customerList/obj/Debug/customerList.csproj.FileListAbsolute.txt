@@ -1,0 +1,9 @@
+K:\customerList\customerList\bin\Debug\customerList.exe.config
+K:\customerList\customerList\bin\Debug\customerList.exe
+K:\customerList\customerList\bin\Debug\customerList.pdb
+K:\customerList\customerList\obj\Debug\customerList.csprojResolveAssemblyReference.cache
+K:\customerList\customerList\obj\Debug\customerList.Form1.resources
+K:\customerList\customerList\obj\Debug\customerList.Properties.Resources.resources
+K:\customerList\customerList\obj\Debug\customerList.csproj.GenerateResource.Cache
+K:\customerList\customerList\obj\Debug\customerList.exe
+K:\customerList\customerList\obj\Debug\customerList.pdb

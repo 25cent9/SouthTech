@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> table colspan rowspan </title>
+	
+	<style>
+	<!--
+	.red{
+		background-color: red;
+	}
+	.blue{
+		background-color: blue;
+	}
+	-->
+	</style>
+</head>
+
+<body>
+<table border="1">
+<tr>
+<td>
+	<table border="1">
+		<tr>
+			<td>A</td>
+			<td>B</td>
+		</tr>
+		<tr>
+			<td colspan="2">C</td>
+		</tr>
+		<tr>
+			<td rowspan="2">D</td>
+			<td>E</td>
+		</tr>
+		<tr>
+			<td>F</td>
+		</tr>
+	</table>
+</td>
+	<td>
+		<table border="1">
+			<tr>	
+				<td colspan="4" class="red">Area 1</td>
+				<td rowspan="2" class="blue">Area<br /> 2</td>
+			</tr>
+			<tr>
+				<td class="red">Area<br /> 3</td>
+				<td rowspan="2" class="blue">Area<br /> 4</td>
+				<td class="red">Area<br /> 5</td>
+				<td class="blue">Area<br /> 6</td>
+			</tr>
+			<tr>
+				<td class="red">Area<br /> 7</td>
+				<td colspan="3" class="blue">Area 8</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</body>
+
+
+
+</html>

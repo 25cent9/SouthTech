@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Validation </title>
+	<script type="text/javascript">
+		/*
+		var num;
+		var num=prompt("Please enter a number");
+		if(isNaN(num)){
+			alert("Please enter a number");
+		}
+		else{
+			alert("That is a number");
+		}
+		*/
+		
+		function notEmpty(checkx,msg){
+			if(checkx.length==0){
+				alert(msg);
+				checkx.focus;
+			}
+			else{
+				checkForAllNumbers(checkx,"Please enter a number");
+			}
+		
+		}
+		
+		function checkForAllNumbers(elem,msg){
+			var numericExpression = /^[0-9]+$/;
+			if(elem.match(numericExpression)){
+				alert("Found a number");
+			}
+			else{
+				alert(msg);
+				elem.focus;
+			}
+		}
+		
+		//Check for all letters
+		function isAlpha(elem, msg){
+			var alphaExp=/^[a-zA-z]+$/;
+			if(elem.match(alphaExp)){
+				alert("Input was alpha");
+			}
+			else{
+				alert("Input was NOT alpha");
+			}
+		}
+		
+		function madeSel(elem, msg){
+			if(elem == "Please Choose"){
+				alert(msg);
+			}
+			else{
+				alert("Great choice");
+			}
+		}
+		
+		function checkEmail(emal,msg){
+			var emailExp=/^[\w\-\.\+]\@[a-zA-Z0-9\.\]+\.[a-zA-Z0-9]{2,4}$/;
+			if(emal.match(emailExp)){
+				alert("This is an emai address");
+			}
+			else{
+				alert(msg);
+			}
+		}
+		
+		function is_int(num){
+			if(parseFloat(num)== parseInt(num) && !isNaN(num)){
+				alert("Is an Integer");
+			}
+			else{
+				alert("Is NOT an Integer");
+			}
+		}
+	</script>
+</head>
+
+<body>
+<form>
+	Required Field: <input type="text" id="req1" />
+	<br />
+	<input type="button" onClick="notEmpty(document.getElementById('req1').value,'Please Enter a value');" value="Check Field" />
+	
+	<input type="button" onClick="notEmpty(document.getElementById('req1').value,'Please Enter a number');" value="Check for numeric" />
+	
+	<input type="button" onClick="isAlpha(document.getElementById('req1').value,'Please Enter a number');" value="Check for alpha" />
+	<br />
+	<br />
+	
+	Selection: <select id="selection">
+				<option>Please Choose</option>
+				<option>CA</option>
+				<option>WI</option>
+				<option>WA</option>
+				</select>
+	<input type="button" onClick="madeSel(document.getElementById('selection').value,'Please choose something')" value="Select" />
+	<br />
+	<br />
+	<input type="text" id="email" />
+	<input type="button" value="Check email" onClick="checkEmail(document.getElementById('email').value,'Enter an email');"/>
+	<br />
+	<br />
+	
+	<input type="text" id="intNum" />
+	<input type="button" onClick="is_int(document.getElementById('intNum').value)" value="Check for integer" />
+	
+</form>
+
+
+
+
+</body>
+
+</html>

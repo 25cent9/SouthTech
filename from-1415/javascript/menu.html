@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Menu- Bank Account </title>
+	<script type="text/javascript">
+	/*
+		Innocent Niyibizi
+		11/24/14
+		Use a menu system to purchase bank account transactions
+	*/
+	function deposit(bal){
+		var transAmt;
+		transAmt=prompt("Enter the amount of the deposit: ");
+		//Validate transAmt
+		transAmt=parseFloat(transAmt);
+		bal=bal+transAmt; //Add amount to balance
+		document.write("Your new balance is: $"+bal.toFixed(2)+"<br />"); //Displays balance
+		return bal; //Returns balance to where the function was called
+	}
+	function widthdrawl(bal){
+		var transAmt;
+		transAmt=prompt("Enter the amount of the widthdrawl: ");
+		//Validate transAmt
+		transAmt=parseFloat(transAmt);
+		bal=bal-transAmt; //Subtracts amount to balance
+		document.write("Your new balance is: $"+bal.toFixed(2)+"<br />"); //Displays balance
+		return bal; //Returns balance to where the function was called
+	}
+	function inquiry(bal){
+		document.write("Your balance is: $"+bal.toFixed(2)+"<br />");
+	}
+	function loanApp(bal){
+		alert("LoanApp");
+	}
+	</script>
+</head>
+
+<body>
+
+<script type="text/JavaScript">
+var menuChoice;
+var currentBalance=0; 
+//Welcome user
+document.write("Welcome to the bank Account Menu Program<p>");
+
+do{
+	//Display choices, ask user for input, convert to upper-case
+	menuChoice=prompt("Enter D for deposit,\n W for widthdral, \n I for inquiry, \n L for loans, or\n X to exit the menu: ");
+	
+	menuChoice=menuChoice.toUpperCase();
+	
+	if(menuChoice=="D"){
+		currentBalance=deposit(currentBalance);
+	}
+	else if(menuChoice=="W"){
+		currentBalance=widthdrawl(currentBalance);
+	}
+	else if(menuChoice=="I"){
+		inquiry(currentBalance);
+	}
+	else if(menuChoice=="L"){
+		loanApp();
+	}
+	else if(menuChoice!="X"){
+		alert("Error: Enter D, W, I, L, or X<br />");
+	}
+}while(menuChoice!="X");
+
+//Thank the user and end the program
+document.write("Thank you!</p>");
+</script>
+
+
+</body>
+
+</html>

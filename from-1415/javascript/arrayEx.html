@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Array Example </title>
+	<style type="text/css">
+		body{
+			font-family: Comic Sans Ms;
+		}
+	</style>
+	<script type="text/JavaScript">
+	/*
+	var fruits = new Array("Apple", "Peach", "Pear", "Mango");
+	var veggie = ["peas", "beans", "carrots"];
+	var emptyArray = new Array();
+	//Get the length of each array
+	document.write("Fruits array length "+fruits.length+"<br />");
+	document.write("Veggie array length "+veggie.length+"<br />");
+	document.write("Empty array length "+emptyArray.length+"<br />");
+	//Display individual elements 
+	document.write(fruits[3]+"<br />");
+	document.write(veggie[0]+"<br />");
+	document.write(emptyArray[0]+"<br />");
+	//Method pop() - removes last element from array
+	alert("Removing "+fruits.pop()); //Removes mango
+	alert(fruits.pop[3]); //Will display undefined
+	
+	// Method push() - appends an element to the array - at the end
+	fruits.push("Watermelon");
+	alert(fruits[3]);
+	alert(fruits[fruits.length-1]); //Gives the last element in the array
+	//Shift() and splice()
+	//Shift() - removes the first element from an array and returns that element
+	alert("Shift from veggie array "+veggie.shift());
+	alert("First element in veggie array "+veggie[0]);
+	
+	
+	//Splice() - Add and or remove elements from an array - from a specific spot in the array
+	
+	var x = new Array("Orange ", "Mango ", "Banana ", "Sugar ", "Tea ");
+	var removed = x.splice(2, 0, "Water ");
+	alert(removed);
+	document.write("After adding 1: "+x);
+	removed = x.splice(3, 1);
+	document.write("<br />Removed: "+removed+"<br />");
+	document.write(x);
+	
+	//unshift - adds one or more elements to the front of an array and returns the new length of the array
+	document.write("<br /> Unshift - "+x.unshift("Pineapple ", "Lemon "));
+	document.write("<br />"+x);
+	//Iterating over array- looping through an array
+	for(var i=0; i<=x.length-1; i++){
+		document.write("<br />"+x[i]);
+	}
+	//sort() and reverse()
+	x=x.sort();
+	document.write("<br />"+x);
+	document.write("<br />");
+	
+	x=x.reverse();
+	document.write(x);
+	//join() and split()
+	//join turns an array into a string
+	var strX = x.join("#");
+	document.write("<br />"+strX);
+	
+	//Split() splits a string using the delimiter and returns an array
+	words="Limit; lines; finish; complete; in; out";
+	var wordsArr=words.split(";");
+	document.write("<br />"+wordsArr);
+	document.write("<br />"+wordsArr[3]);
+	
+	
+	//Usiing length to trim an array
+	var arr=[0,1,2,3];
+	alert(arr);
+	arr.length=2;	//Trim two elements
+	alert(arr);	//Does not exist since length was altered.
+	
+	
+	//Sparse arrays, details of length
+	var fruits = [];	//Empty array
+	fruits[1]="Peach";
+	fruits[99]="Apple";
+	alert(fruits.length);	//Array has 100 elements, 0-99
+	alert(fruits);	//Empty elements are just commas 
+	
+	
+	var fruits2 = [];	//Empty array
+	fruits2[1]="Peach";
+	fruits2[9]="Apple";
+	alert(fruits2.pop());
+	alert(fruits2.pop());
+	
+	
+	//Removing elements from an array
+	var arr = ["Go","to","home"];
+	alert(arr);
+	delete arr[1];
+	alert(arr);
+	
+	
+	var arrx=["Why", "learn", "JavaScript"];
+	//var arr2=arrx.slice(0,2); //Goes to 0 index and copies the next to elements and puts them in arrx
+	//alert(arr2);
+	//alert(arrx); "Why, learn, JavaScript"
+	//alert(arr2.join(', ')); "Why, learn "
+	
+	var arr2=arrx.slice(1);
+	alert(arr2);	//"learn, JavaScript"
+	
+	
+	//The next section of code will gather names, put them in an array, sort them,and then print them out in order
+	var names= new Array();
+	var i=0;
+	do{
+		//Gathers name and puts them into the array
+		next=prompt("Enter the next name: ");
+		if(next >" " && next != "undefined" && isNaN(next)){
+			names[i]=next;
+			i++;
+		}
+	}	
+	while(next > " " && next != "undefined");
+	//sorts the array
+	names = names.sort();
+	document.write("<h2>"+names.length+" names enterd.</h2>");
+	document.write("<ol>");
+	for(i=0; i<names.length; i++){
+		document.write("<li>"+names[i])+"</li>";
+	}
+	document.write("</ol>");
+	
+	
+	var a = [30,2,1,9,15];
+	alert(a.sort(compare));
+	function compare(a,b){
+		alert(a+" "+b);
+		return a-b;	//ascending order 
+		//return b-a;	//decending order
+	}
+	
+	
+	//Prompt the user for a cust nbr, search array for match
+	var err=0;
+	var custNmbr = [1234,2345,3456,4567,5678,6789];
+	var searchVal;
+	searchVal=prompt("Please enter a customer number");
+	var fnd=1;
+	while(err==0){
+		
+		if(isNaN(searchVal) || searchVal=="" || searchVal==" "){
+			searchVal=prompt("Please enter a customer number");
+		}
+		else{
+			err=1;
+		}
+	}
+	var srcVal=parseInt(searchVal);
+	
+	for(x=0; x<custNmbr.length; x++){
+		if(custNmbr[x]==srcVal){
+			alert("Customer number found ");
+			fnd=0;	//Switches to 0 to indicate  that a match is found
+			break;
+			//i = custNmbr.length;
+		}
+		
+	}
+	if(fnd==1){	//1 means that input number not found
+			alert("No match found");
+	}
+	
+	//parallel Arrays	2 or more arrays where the information is related and both arrays have the same subscript/index for the related information
+	
+	var userId=[1234,2345,3456,4567];
+	var passWord=["password", "killroy","gucci","yolo"];
+	
+	var inId=prompt("Please enter your user id: ");
+	inId=parseInt(inId);
+	var x;
+	var fnd=false;
+	var owner=["Sam Spade","Jack Beanstalk","Peter Pan","King Tut"]
+	for(x=0; x<userId.length; x++){
+		if(userId[x]==inId){
+			alert(owner[x]+" your password is "+passWord[x]);
+			fnd=true;
+			break;
+		}
+	}
+	if(fnd==false){
+		alert("No match found");
+	}
+	
+	
+	//setTimeout-calls a function or execute a code snippet after a specified time
+	//setInterval - calls a function or executes a code snippet reatedly with a fixed time delay between each call
+	
+	//setinterval code executes every 1000ms exactly, while the setTimeout waits 1000ms, runs the function which takes some ms, then sets another time out
+	
+	function sayHello(){
+		document.write("Hello<br />");
+	}
+	function timeGreeting(){
+		//var greeting = setTimeout("sayHello()",3000);	//Runs after 3000ms 1000ms = 1second
+		var greeting = setInterval("sayHello()",300);	
+	}
+	timeGreeting();
+	timeGreeting();
+	*/
+	
+	
+	</script>
+</head>
+
+<body>
+
+<p>Click on the "Start count!" button above to execute the timer. The input field will count forever, starting at 0. Click on the "Stop count!" button to stop the counting. Click on the "Start count!" button to start the timer again</p>
+<form>
+<input type="button" onclick="startTime();" value="Start Count!"/>
+<input type="text" id="txt" />
+<input type="button" onclick="stopCount();" value="Stop Count!" />
+</form>
+
+<script type="text/JavaScript">
+	/*
+	var count=0;
+	var t;
+	var timer_is_on=0;
+	
+	function timedCount(){
+		document.getElementById('txt').value=count;
+		count++;
+		t = setTimeout("timedCount()",1000);
+		alert(t);
+	}
+	
+	function startCount(){
+		if(timer_is_on==0){
+			timer_is_on=1;
+			timedCount();
+		}
+	}
+	
+	function stopCount(){
+		clearTimeout(t);
+		timer_is_on=0;
+	}
+	*/
+	//setInterval 
+	/*
+	function startTime(){
+		var today=new Date();
+		var h= today.getHours();
+		var m=today.getMinutes();
+		var s=today.getSeconds();
+		//add a zero to the front of number > 10
+		m=checkTime(m);
+		s=checkTime(s);
+		document.getElementById('txt').value=h +":"+ m+":" + s;
+		var t=setTimeout("startTime()",1);
+	}
+	function checkTime(i){
+		if(i<10){
+			i="0"+i;
+		}
+		return i;
+	}
+	
+	startTime();
+	*/
+	//Set interval
+	var intInterval=0;
+	function myInterval(){
+		alert("Hello");
+	}
+	
+</script>
+
+<form>
+<input type="button" onclick="intInterval=setInterval('myInterval()',3000);" value="Click for setInterval"/>
+<br />
+<input type="button" onclick="clearInterval(intInterval);" value="Stop setInterval"/>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+H:\chapter1_Exp2\chapter1_Exp2\bin\Debug\chapter1_Exp2.exe
+H:\chapter1_Exp2\chapter1_Exp2\bin\Debug\chapter1_Exp2.pdb
+H:\chapter1_Exp2\chapter1_Exp2\obj\x86\Debug\chapter1_Exp2.exe
+H:\chapter1_Exp2\chapter1_Exp2\obj\x86\Debug\chapter1_Exp2.pdb

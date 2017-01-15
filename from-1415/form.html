@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Form Ex </title>
+</head>
+
+<body>
+
+<form action="http://www.hashemian.com/tools/form-post-tester.php/in123" method="post">
+
+<input type="hidden" value="25cent9@gmail.com" id="emailhidd" name="emailhidd"/>
+
+<fieldset id="main">
+	<span style="color: blue">Fist Name:</span> <input type="text" id="frame" name="fname"  placeholder="Please enter your first name" autofocus="autofocus" size="30" maxlength="30"/>
+	<!-- Required means that the field needs to be entered before the data can be submitted -->
+	<!-- Placeholder will put the value of placeholder in the text box in grey-->
+	<!-- Autofocus will put the cursor in the text box when the form is loaded-->
+	<!-- Size displays the number of characters, size value - text box is displaying that number of characters -->
+	<!-- Maxlength only allows that number of characters to be entered -->
+	<br />
+	Last Name: <input type="text" id="lname" name="lname" required placeholder="Please enter your last name" size="30" maxlength="30" />
+	<br />
+	Country: <input type="text" id="country" name="country" size="30" list="countries"/>
+		<datalist id="countries">
+			<option value="USA">
+			<option value="Canada">
+			<option value="UK">
+			<option value="DRC">
+		</datalist>
+	<!-- The list value in the input tag needs to be the same as the id in the datalist tag -->
+	<!-- A datalist will allow you to show a list of values for the element you want your user to input data into -->
+	<!-- The option tag will be where you enter the values for the user to select from -->
+	<br />
+	County: <input type="text" id="county" name="county" value="St. Louis" />
+	<!-- Value will be what is defaulted into the element. It is like you entered the data into the field but you didnt -->
+	<br />
+	Password: <input type="password" id="password" name="password"  placeholder="(2)A-Z (4)0-9" />
+	<!-- First two characters must be capital from a-z, the next 4 characters must be numbers from 0-9 -->
+	<!-- Password will display * or a bullet point for every key stroke the user enters in the field. It does not encrypt the field -->
+	<br />
+	<fieldset id="gender"><!-- Used to group elements that have a common theme -->
+	<legend>Radio Buttons</legend><!-- Text at the top of a fieldset box -->
+		Gender: <input type="radio" name="gend" value="male" checked /> Male
+		<input type="radio" name="gend" value="female"  /> Female
+		<br />
+		Do you own your house?: <input type="radio" name="house" value="yes"  /> Yes
+		<input type="radio" name="house" value="no"  /> No
+	</fieldset>
+<!-- Checkboxes are used for multiple selections -->
+Which pets do you have: <input type="checkbox" id="dog" name="dog" value="dog" /> Dog
+<input type="checkbox" id="cat" name="cat" value="cat" /> Cat
+<input type="checkbox" id="mouse" name="mouse" value="mouse" /> Mouse
+</fieldset>
+
+Comments here: <br />
+<textarea id="comments" name="comments" rows="5" cols="100"> Please enter your comments
+
+</textarea>
+<br />
+<!-- Selection -->
+Please select the meats you like:
+<select id="meat" name="meat" multiple size="2">
+	<optgroup label="Beef">
+		<option value="1"> Steak</option>
+	</optgroup>
+	<optgroup label="foul">
+		<option value="2" selected> Chicken</option>
+		<option value="3"> Turkey</option>
+	</optgroup>
+	<optgroup label="pork">
+		<option value="4"> Ribs</option>
+	</optgroup>
+</select>
+<br />
+<input type="submit" value="Submit Form" />
+<input type="reset" value="Reset Form" />
+<input type="button" value="subTotal" />
+<button> <img src="link.jpg" />Calculate</button>
+</form>
+
+
+
+</body>
+
+</html>

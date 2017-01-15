@@ -1,0 +1,30 @@
+﻿Build started 9/18/2015 12:33:34 PM.
+     1>Project "H:\max1\max1\max1.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "H:\max1\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\max1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source.cpp
+         source.cpp
+     1>h:\max1\max1\source.cpp(56): warning C4018: '<' : signed/unsigned mismatch
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\max1.exe.embed.manifest.res" Debug\max1_manifest.rc 
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\max1\Debug\max1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\max1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\max1\Debug\max1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\max1\Debug\max1.lib" /MACHINE:X86 Debug\max1.exe.embed.manifest.res
+         Debug\source.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\max1.exe.embed.manifest" /manifest Debug\max1.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\max1.exe.embed.manifest.res" Debug\max1_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\max1\Debug\max1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\max1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\max1\Debug\max1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\max1\Debug\max1.lib" /MACHINE:X86 Debug\max1.exe.embed.manifest.res
+         Debug\source.obj
+         max1.vcxproj -> H:\max1\Debug\max1.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\max1.unsuccessfulbuild".
+         Touching "Debug\max1.lastbuildstate".
+     1>Done Building Project "H:\max1\max1\max1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.23

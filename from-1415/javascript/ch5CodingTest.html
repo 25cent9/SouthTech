@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 11/6/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>  </title>
+	<script type="text/javascript">
+	var totCost=0;
+	var firstclass=0;
+	var vali;
+	var firstclassPrice=0;
+	var bookRatePrice=0;
+	var letterPrice=0;
+	var bookRate=0;
+	var letters=0;
+	var largeEnvelopes=0;
+	var largeEnvelopesPrice=0;
+	
+	function calcFirstClass(){
+		firstclass=parseInt(document.getElementById('firstClass').value);
+		validateNums(firstclass,"First class is not a valid number","First class is valid");
+		if(vali=="T"){
+			if(firstclass==1){
+				firstclassPrice=0.45;
+			}
+			else if(firstclass>1){
+				firstclassPrice=0.45+0.21*firstclass;
+			}
+		}
+		document.getElementById('costs').value +="Cost for first class is $"+firstclassPrice.toFixed(2)+" \r";
+	}
+	
+	function calcBook(){
+		bookRate=parseInt(document.getElementById('book').value)*0.062500;
+		validateNums(bookRate,"Book rate is invalid","Book rate is valid");
+		if(vali=="T"){
+			if(bookRate==1){
+				bookRatePrice=2.47;
+			}
+			else if (bookRate>=2){
+				bookRatePrice=2.47+0.43*bookRate;
+			}
+			else if(bookRate>7){
+				bookRatePrice=2.47+0.29*bookRate;
+			}
+		}
+		document.getElementById('costs').value +="Cost for book rate is $"+bookRatePrice.toFixed(2)+" \r";
+	}
+	
+	function calcLetters(){
+		letters=document.getElementById('letter').value;
+		validateNums(letters,"Letter is invalid","Letter is valid");
+		if(vali=="T"){
+			if(letters==1){
+				letterPrice=0.45;
+			}
+			else if(letters==2){
+				letterPrice=0.65;
+			}
+			else if(letters==3){
+				letterPrice=0.85;
+			}
+			else{
+				alert("Letter is an invalid weight, cannot process.");
+			}
+			document.getElementById('costs').value +="Cost for letter is $"+letterPrice.toFixed(2)+" \r";
+		}
+	}
+	
+	function calcLargeEnvelopes(){
+		largeEnvelopes=parseInt(document.getElementById('largeEnvel').value);
+		validateNums(largeEnvelopes,"Large envelopes is an invalid number","Large envelope is valid");
+		if(vali=="T"){
+			switch (largeEnvelopes){
+				case 1:
+					largeEnvelopesPrice=0.90;
+					break;
+				case 2: 
+					largeEnvelopesPrice=1.10;
+					break
+				case 3: 
+					largeEnvelopesPrice=1.30;
+					break;
+				case 4: 
+					largeEnvelopesPrice=1.50;
+					break;
+				case 5: 
+					largeEnvelopesPrice=1.70;
+					break;
+				case 6: 
+					largeEnvelopesPrice=1.90;
+					break;
+				case 7:
+					largeEnvelopesPrice=2.10;
+					break;
+				case 8:
+					largeEnvelopesPrice=2.30;
+					break;
+				case 9:
+					largeEnvelopesPrice=2.50;
+					break;
+				case 10:
+					largeEnvelopesPrice=2.70;
+					break;
+				case 11:
+					largeEnvelopesPrice=2.90;
+					break;
+				case 12:
+					largeEnvelopesPrice=3.10;
+					break;
+				case 13: 
+					largeEnvelopesPrice=3.30;
+					break;
+			}
+			if(largeEnvelopes>13){
+				alert("Large envelope weight is invalid, please enter a new one");
+			}
+			document.getElementById('costs').value +="Cost for large envelope is $"+largeEnvelopesPrice.toFixed(2)+" \r";
+		}
+	}
+	
+	function calcTot(){
+		totCost=firstclassPrice+bookRatePrice+letterPrice+largeEnvelopesPrice;
+		document.getElementById('costs').value +="Your grand total is $"+totCost.toFixed(2)+" \r";
+	}
+	
+	
+	function validateNums(num,errmsg,validmsg){
+			if(!isNaN(num) && num.length!=0 && num>0){
+				vali="T";
+				return vali;
+			}
+			else{
+				vali="F";
+				alert(errmsg);
+			}
+	}
+	
+	</script>
+</head>
+
+<body>
+<form>
+
+<fieldset>
+<legend>First class, domestic</legend>
+Please enter weight (in ounces): <input type="text" size="2" id="firstClass" />
+<input type="button" onClick="calcFirstClass();" value="Calculate"/>
+</fieldset>
+
+<fieldset>
+<legend>Book rate</legend>
+Please enter weight (in ounces): <input type="text" size="2" id="book" />
+<input type="button" onClick="calcBook();" value="Calculate"/>
+</fieldset>
+
+<fieldset>
+<legend>Pirority Mail</legend>
+Letters:<br />
+Please enter weight (in ounces): <input type="text" size="2" id="letter" />
+<input type="button" value="Calculate" onClick="calcLetters();"/><br /><br />
+
+Large Envelopes:<br />
+Please enter weight (in ounces): <input type="text" id="largeEnvel" size="2" />
+<input type="button" value="Calculate" onClick="calcLargeEnvelopes();"/>
+</fieldset>
+
+<h1>Cost:<textarea readonly id="costs" cols="25" rows="5"></textarea></h1>
+<input type="button" value="Calculate total cost" onClick="calcTot();">
+<input type="reset" value="Reset"/>
+
+</form>
+
+</body>
+
+</html>

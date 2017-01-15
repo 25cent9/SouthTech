@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 2/25/15 -->
+<html>
+<head>
+  <title>JavaScript and the Document Object Model</title>
+  <script type="text/javascript">
+	function doEvents(){
+		var newPara1 = document.createElement("p");
+		var newPara1Text = document.createTextNode("New paragraph element");
+		newPara1.appendChild(newPara1Text);
+		document.getElementById('content').appendChild(newPara1);
+		
+		var beforePara = document.createElement("p");
+		var beforeParaText = document.createTextNode("New paragraph using insertBefore");
+		beforePara.appendChild(beforeParaText);
+		var paragraphs = document.getElementById('content');
+		paragraphs.insertBefore(beforePara, paragraphs.childNodes[2]);
+		
+		var div = document.getElementById('content');
+		var toBeRemoved = document.getElementById('1');
+		div.removeChild(toBeRemoved);
+		
+		var replacement=document.createElement('p');
+		var replacementText = document.createTextNode("This is the replaced text");
+		replacement.appendChild(replacementText);
+		var toBeReplaced = document.getElementById('2');
+		div.replaceChild(replacement, toBeReplaced);
+	}
+  </script>
+</head>
+<body>
+  <div id="page">
+    <div id="header"><h1 id="title">Page title</h1></div>
+    <div id="content">
+      <h2>Content title</h2>
+      <p id="1">Some copy goes here</p>
+      <p id="2">More copy goes here</p>
+    </div>
+	<button onclick="doEvents();">Do Events</button>
+  </div>
+</body>
+</html>

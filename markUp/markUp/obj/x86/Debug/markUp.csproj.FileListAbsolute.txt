@@ -1,0 +1,4 @@
+H:\markUp\markUp\bin\Debug\markUp.exe
+H:\markUp\markUp\bin\Debug\markUp.pdb
+H:\markUp\markUp\obj\x86\Debug\markUp.exe
+H:\markUp\markUp\obj\x86\Debug\markUp.pdb

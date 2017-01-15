@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- Innocent Niyibizi -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey</title>
+	<style>
+	<!--
+	#sideright{
+		width: 30%; 
+		float: right; 
+		display: inline;
+	}
+	#sideleft{
+		width: 30%; 
+		float: left; 
+		display: inline;
+	}
+	#middle{
+		width: 40%;
+		float: left;
+		display: inline; 
+		padding: 20px;
+		top: 0;
+		background-color: #DCA64C;
+	}
+	body{
+		background-image: url(pics/notes.jpg);
+		background-size: 100%;
+	}
+	fieldset{
+		border-color: black;
+	}
+	h1{
+		text-align: center;
+	}
+	-->
+	</style>
+</head>
+<body>
+<div id="sideleft">
+&nbsp;
+</div>
+
+<div id="middle">
+	<form action="http://www.hashemian.com/tools/form-post-tester.php/in123" method="post">
+		<fieldset>
+			<legend>General Information</legend>
+			First name: <input type="text" name="fname" required />
+			Last name: <input type="text" name="lname" required /> <br />
+			E-mail: <input type="text" name="email" required /> <br />
+			<fieldset>
+				<legend>Music Information</legend>
+				What type(s) of music do you prefer?: <br />
+				<input type="checkbox" name="mtype" value="jazz" />Jazz<br />
+				<input type="checkbox" name="mtype" value="rock" />Rock<br />
+				<input type="checkbox" name="mtype" value="easylistening" />Easy Listening<br />
+				<input type="checkbox" name="mtype" value="country" />Country<br />
+				
+				<p>
+				What radio station(s) do you listen to?: <br />
+					<input type="checkbox" name="radiosation" value="wfun" />WFUN 95.5 	FM <br />
+					<input type="checkbox" name="radiosation" value="kiht" />KIHT 96.3 FM<br />
+					<input type="checkbox" name="radiosation" value="kftk" />KFTK 96.7 FM <br />
+					<input type="checkbox" name="radiosation" value="ktfk" />KTFK 97.1 FM<br />
+					<input type="checkbox" name="radiosation" value="kyky" />KYKY 98.1 FM <br />
+					<input type="checkbox" name="radiosation" value="kljy" />KLJY 99.1 FM <br />
+					<input type="checkbox" name="radiosation" value="kbwx" />KBWX 100.3 FM <br />
+					<input type="checkbox" name="radiosation" value="wxos" />WXOS 101.1 FM <br />
+					<input type="checkbox" name="radiosation" value="k268" />K268 101.5 FM<br />
+					<input type="checkbox" name="radiosation" value="kezk" />KEZK 102.5 FM <br />
+					<input type="checkbox" name="radiosation" value="klou" />KLOU 103.7 FM <br />
+					<input type="checkbox" name="radiosation" value="whhl" />WHHL 104.1 FM<br />
+					<input type="checkbox" name="radiosation" value="kmjm" />KMJM 104.9 FM <br />
+					<input type="checkbox" name="radiosation" value="kpnt" />KPNT 105.7 FM <br />
+				</p>
+				Why do you tune in to those stations?: <br />
+				<textarea name="tunningIn" rows="3" cols="35"></textarea>
+			</fieldset>
+		</fieldset>
+		
+		<p style="text-align: center">
+		<input type="submit" value="Submit Form" />
+		<input type="reset" value="Reset Form" />
+		</p>
+	</form>
+</div>
+
+<div id="sideright">
+</div>
+</body>
+</html>

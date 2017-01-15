@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>  </title>
+	<script type="text/javascript">
+		function f1(){
+		
+			var canvas = document.getElementById('carea');
+			//property that sets or gets the color, gradient or pattern used to fill the drawing
+			var context = canvas.getContext('2d');
+			//getContext() method to accept 2d rendering
+			context.fillStyle = "rgb(0,0,255)";
+			//sets or returns the color, gradient or pattern used to fill the drawing
+			context.fillRect(10, 20, 200, 100);
+			
+			//The following code will draw a line on the canvas
+			context.moveTo(50, 60);	//This is the starting point for your line
+			context.lineTo(100,200);	//This is the ending point of your line
+			context.stroke();	//Drawing the line
+			
+			//draw a circle
+			context.beginPath();
+			context.arc(250, 50, 40, 0, 2*Math.PI);
+			context.stroke();
+			
+			//text on canvas
+			//font size and font style
+			context.font="30px Arial";
+			//text to display and the coordinate of where the text will start
+			context.fillText("Today is Monday",500,500);
+			
+			//draw gradient
+			var grd = context.createLinearGradient(0,0,200,0);
+			grd.addColorStop(0,"black");
+			grd.addColorStop(1,"white");
+			
+			//Fill with gradient
+			context.fillStyle=grd;
+			context.fillRect(10,10,150,80);
+			
+			//Circular gradient
+			//Create gradient
+			var gr = context.createRadialGradient(450,200,5,450,200,100);
+			//	x0-450- x-coordinate of the starting circle of the gradient
+			//	y0 - 200 - y-coordinate of the starting circle of the gradient
+			//	r0 - 5 - radius of the starting circle
+			//	x1 - 450 - x-coordinate of the ending circle of the gradient
+			//	y1 - 200 - y-coordinate of the ending circle of the gradient
+			//	r1 - 100 - radius of the ending circle
+			gr.addColorStop(0,"yellow");
+			gr.addColorStop(1,"grey");
+			
+			//Fill with gradient
+			context.arc(500,200,100,0,2*Math.PI);
+			//	x of the center of the circle
+			//	y of the center of the cirlce
+			//	radius of the circle 
+			//	sAngle- the starting angle, in the radians (0 is at the 3 o'clock position of the arc's circle)
+			//	e-Angle- ending angle, in radians
+			context.fillStyle=gr;
+			context.fill();
+			
+			var c= document.getElementById('carea');
+			var cont = c.getContext('2d');
+			var img = document.getElementById('pic');
+			cont.drawImage(img,200,200);
+		}
+	</script>
+</head>
+
+<body onload="f1();">
+<img id="pic" src="../dogecoin.png" alt="example picture" width="220" height="277"/>
+	This is above the canvas<br />
+	<canvas id="carea" height="1000" width="2000" style="background-color: purple">
+	
+	</canvas>
+	<br />This is below the canvas
+</body>
+
+</html>

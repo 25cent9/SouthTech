@@ -1,0 +1,4 @@
+H:\chp3_2\chp3_2\bin\Debug\chp3_2.exe
+H:\chp3_2\chp3_2\bin\Debug\chp3_2.pdb
+H:\chp3_2\chp3_2\obj\x86\Debug\chp3_2.exe
+H:\chp3_2\chp3_2\obj\x86\Debug\chp3_2.pdb

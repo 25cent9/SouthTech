@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>File API Reading a File</title>
+	<script>
+		window.addEventListener("load", function(event){
+			var key = document.getElementById("key");
+			var value = document.getElementById("value");
+			var add = document.getElementById('add');
+			var remove = document.getElementById('remove');
+			var clear = document.getElementById('clear');
+			var content = document.getElementById('content');
+			
+			add.addEventListener('click', function(event){
+				if(key.value !== ""){
+					try{
+						localStorage.setItem(key.value, value.value);
+					}
+					catch(e){
+						alert("Eexceeded Storage Quota!");
+					}
+					refreshContents();
+				}
+			});
+			remove.addEventListener("click", function(event){
+			if(key.value !== ""){
+				localStorage.removeItem(key.value);
+				refreshContents();
+			}
+		});
+		clear.addEventListener("click", function(event){
+			localStorage.clear();
+			refreshContents();
+		});
+		window.addEventListener("storage", function(event){
+			var k = event.key;
+			var newValue = event.newValue;
+			var oldValue = event.oldValue;
+			var url = event.url;
+			var storageArea = event.storageArea;
+			
+			alert('Event:n' + k + "N" + newValue + "n" + oldValue + "n" + url + "n" + storageArea);
+			refreshContents();
+			
+		});
+		function refreshContents(){
+			var str = "";
+			for (var i=0, len = localStorage.length; i < len; i++){
+				var k = localStorage.key(i);
+				var v = localStorage.getItem(k);
+				str += "'" + k + "'='" + v + "'<br />"
+			}
+			key.value = "";
+			value.value="";
+			content.innerHTML="<br />"+str;
+		}
+		refreshContents();
+		});
+		
+	</script>
+</head>
+
+
+<body>
+	Key: <input type="text" id="key"/><br />
+	Value: <input type="text" id="value" /><br />
+	<input type="button" id="add" value="Add to storage" />&nbsp;
+	<input type="button" id="remove" value="Remove from storage" />&nbsp;
+	<input type="button" id="clear" value="Clear from storage" />&nbsp;
+	<span id="content"></span>
+</body>
+</html>

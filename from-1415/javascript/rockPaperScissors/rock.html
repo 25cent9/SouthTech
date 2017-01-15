@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 11/10/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Rock, Paper, and Scissors </title>
+	<script type="text/javascript">
+	var userChoice;
+	var computerChoice;
+	var computerNum;
+	var wins=0;
+	var losses=0;
+	var ties=0;
+	function playerSelection(choice){
+		userChoice=choice;
+		
+		switch(userChoice){
+			case 1:
+			document.getElementById('playerChoice').src="pics/rock.png";
+			break;
+			
+			case 2:
+			document.getElementById('playerChoice').src="pics/paper.png";
+			break;
+			
+			case 3:
+			document.getElementById('playerChoice').src="pics/scissors.png";
+			break;
+			
+			default:
+			document.getElementById('playerChoice').src="pics/start.png";
+			break;
+		}
+		
+		computerNum=getRandomInt(1,3);
+		computerSelect(computerNum);
+	}
+	
+	function computerSelect(num){
+		switch(num){
+			case 1:
+			document.getElementById('computerChoice').src="pics/rock.png";
+			break;
+			
+			case 2:
+			document.getElementById('computerChoice').src="pics/paper.png";
+			break;
+			
+			case 3:
+			document.getElementById('computerChoice').src="pics/scissors.png";
+			break;	
+		}
+		compare();
+	}
+	
+	function compare(){
+		if(userChoice==computerNum){
+			alert("You tied");
+			ties=ties+1;
+			document.getElementById('ties').value=ties;
+		}
+		else if(userChoice==1 && computerNum==2){
+			alert("You chose rock and the computer chose paper, you lost");
+			losses=losses+1;
+			document.getElementById('losses').value=losses;
+		}
+		else if(userChoice==2 && computerNum==1){
+			alert("You chose paper and the computer chose rock, you win");
+			wins=wins+1;
+			document.getElementById('wins').value=wins;
+		}
+		else if(userChoice==2 && computerNum==3){
+			alert("You chose paper and the computer chose scissors, you lose");
+			losses=losses+1;
+			document.getElementById('losses').value=losses;
+		}
+		else if(userChoice==3 && computerNum==2){
+			alert("You chose scissors and the computer chose paper, you win");
+			wins=wins+1;
+			document.getElementById('wins').value=wins;
+		}
+		else if(userChoice==1 && computerNum==3){
+			alert("You chose rock and the computer chose scissors, you win");
+			wins=wins+1;
+			document.getElementById('wins').value=wins;
+		}
+		else if(userChoice==3 && computerNum==1){
+			alert("You chose scissors and the computer chose rock, you lost");
+			losses=losses+1;
+			document.getElementById('losses').value=losses;
+		}
+	}
+	
+	function getRandomInt(min, max){
+		return Math.floor(Math.random()*max-min+1)+min;
+	}
+	function resetGame(defaultValue){
+		document.getElementById('playerSelect').checked=false;
+		document.getElementById('computerChoice').src="pics/start.png";
+		document.getElementById('playerChoice').src="pics/start.png";
+		document.getElementById('wins').value="";
+		document.getElementById('ties').value="";
+		document.getElementById('losses').value="";
+
+		ties= defaultValue;
+		losses= defaultValue;
+		wins= defaultValue;
+	}
+	</script>
+	
+	<style>
+	<!--
+	body{
+		font-family: Comic Sans MS;
+	}
+	h1,h2{
+		text-align: center;
+	}
+	-->
+	</style>
+</head>
+
+<body>
+<h1> Rock, Paper, Scissors</h1>
+<form>
+<table cellpadding="50%">
+	<tr>
+		<td>
+			<input type="radio" name="playerSelect" id="playerSelect" value="1" onClick="playerSelection(1);"/><img src="pics/rock.png" width="200px" height="200px"/><br />
+			<input type="radio" name="playerSelect" id="playerSelect" value="2" onClick="playerSelection(2);"/><img src="pics/paper.png" width="200px" height="200px"/><br />
+			<input type="radio" name="playerSelect" id="playerSelect" value="3" onClick="playerSelection(3);"/><img src="pics/scissors.png" width="200px" height="200px"/>
+		</td>
+		<td>
+			<img src="pics/start.png" id="playerChoice" width="300" height="300"/><br />
+			<h2>Player</h2>
+		</td>
+		<td>
+			<img src="pics/start.png" id="computerChoice" width="300" height="300"/><br />
+			<h2>Computer</h2>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Wins
+			<input type="text" id="wins" readonly size="1" />
+		</td>
+		<td>
+			Ties
+			<input type="text" id="ties" readonly size="1" />
+		</td>
+		<td>
+			Losses
+			<input type="text" id="losses" readonly size="1" />
+		</td>
+	</tr>
+</table>
+<div style="text-align: center">
+	<input type="button" onClick="resetGame(0);" value="Reset"/>
+</div>
+</form>
+
+
+</body>
+
+</html>

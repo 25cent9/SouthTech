@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jackets Unlimited</title>
+	
+	<script type="text/javascript">
+	/*
+	*Name: Innocent Niyibizi
+	*Date: 10/9/14
+	*Purpose: To calculate the discount price given the original price of a jacket
+	*/
+		//Declaring variables
+		var originalPrice=0;
+		var discountRate=0;
+		var discountPrice=0;
+		var salePrice=0;
+		
+		//Function to calculate the sale price
+		function calculate(){
+			originalPrice=parseInt(document.getElementById('original').value);
+			discountRate=parseInt(document.getElementById('discount').value)/100;
+			discountPrice=originalPrice*discountRate;
+			salePrice=originalPrice-discountPrice;
+			
+			//Displaying the sale price in a text box
+			document.getElementById('sale').value=salePrice;
+		}
+	</script>
+</head>
+<body>
+	<!-- Form to collect original price and discount rate -->
+	<form id="jackets" name="jackets">
+	<div style="text-align: center">
+	<h1> Jackets Unlimited</h1>
+	<img src="jacket.png" alt="jacket" />
+	<img src="jacket1.png" alt="jacket" height="375" width="514"><br />
+		Original Price: $<input type="text" id="original" size="4" />
+		Discount Rate: <input type="text" size="3" id="discount" placeholder="10%" />
+		<input type="button" value="Calculate" onclick="calculate()" /><br />
+		The sale price will be: $<input type="text" readonly size="4" id="sale"/>
+	</div>	
+	</form>
+</body>
+</html>

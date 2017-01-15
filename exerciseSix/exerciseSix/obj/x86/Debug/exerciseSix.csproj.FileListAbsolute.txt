@@ -1,0 +1,4 @@
+H:\exerciseSix\exerciseSix\bin\Debug\exerciseSix.exe
+H:\exerciseSix\exerciseSix\bin\Debug\exerciseSix.pdb
+H:\exerciseSix\exerciseSix\obj\x86\Debug\exerciseSix.exe
+H:\exerciseSix\exerciseSix\obj\x86\Debug\exerciseSix.pdb

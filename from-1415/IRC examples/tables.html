@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Tables </title>
+	<script type="text/javascript">
+	
+	</script>
+	<style type="text/css">
+		td.mname{
+			font-style: italic;
+		}
+		.blue{
+			background-color: blue;
+		}
+		.red{
+			background-color: red;
+		}
+		legend{
+			font-style: italic;
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<table border="20">
+	<!--colgroup span="2" style="background-color: #F0E68C;">
+	</colgroup-->
+		<col class="blue" style="color: blue;" />
+		<col class="red" style="color: red;" />
+		<thead style="font-size: x-large;">
+			<tr>
+				<th>Movie</th>
+				<th>Gross Proceeds</th>
+			</tr>
+		</thead>
+		
+		<tfoot>
+			<tr>
+				<th>Total</th>
+				<th>$5.8 Billion</th>
+			</tr>
+		</tfoot>
+		
+		<tbody >
+			<tr>
+				<td class="mname">Avatar</td>
+				<td>$2.7 Billion</td>
+			</tr>
+			<tr>
+				<td class="mname">Titanic</td>
+				<td>$2.1 Billion</td>
+			</tr>
+			<tr>
+				<td class="mname">The Dark Knight</td>
+				<td>$1.0 Billion</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<dl>
+		<dt>Strawberry delight</dt>
+			<dd>*Insert definition*</dd>
+		<dt>Strawberry delight</dt>
+			<dd>*Insert definition*</dd>
+		<dt>Strawberry delight</dt>
+			<dd>*Insert definition*</dd>
+		<dt>Strawberry delight</dt>
+			<dd>*Insert definition*</dd>
+	</dl>
+	
+	<ol type="A" start="2" reversed="reversed">
+		<li>Desktops</li>
+		<li>Laptops</li>
+		<li>Tablets</li>
+		<li>Smart phones</li>
+	</ol>
+	
+	<div id="contact-form" style="font-family: Arial Narrow, Nimbus Sans L, Sans-Serif;">
+	<!-- Action specifies the web address to which form data is sent. Method can be a get or post. Get has limited space and concatnates the data to a file. Post replaces the file -->
+	<form id="contact" method="post" action="" autocomplete="on" >
+	<!-- Auto complete- values can be "on" or "off" specifies whether auto complete of the form or input field can be on or off -->
+		<fieldset>
+			<legend>Name</legend>
+			<label for="name" >Name</label>
+			<input type="text" name="name" required autofocus />
+			<!-- Required means you have to have a value in the field -->
+		</fieldset>
+		<fieldset>
+			<legend>E-mail</legend>
+			<label for="email">Email</label>
+			<input type="text" name="email" />
+			<br />Do you want email:<input type="checkbox" checked="checked" />
+			<br />No junk email:<input type="checkbox" checked="checked" disabled />
+		</fieldset>
+		Zip:<input type="text" maxlength="5" size="2" placeholder="63127" />
+		<!-- Placeholder adds faint text in the input field -->
+		<br />State:<input type="text" maxlength="2" size="2" placeholder="MO"readonly /><br />
+		<!-- Step specifies the legal number intervals for an <input> element usually used with min and max attribute to create a range of legal values-->
+		<br />Numbers:<input type="number" name="points" step="1" size="2" /><br />
+		<br />Countries:<input id="country" name="country" size="30" list="countries" />
+			<datalist id="countries">
+				<option value="United States" />
+				<option value="MExico" />
+			</datalist>
+			<!-- Search enables you to do a search feature for a web page -->
+		<br />Search<input type="search" required />
+		<br />
+		<input type="submit" value="Submit" />
+		<input type="reset" value="Reset" />
+	</form>
+	
+	
+	</div>
+</body>
+
+</html>

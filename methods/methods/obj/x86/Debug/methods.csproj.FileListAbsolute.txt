@@ -1,0 +1,7 @@
+H:\methods\methods\bin\Debug\methods.exe
+H:\methods\methods\bin\Debug\methods.pdb
+H:\methods\methods\obj\x86\Debug\methods.Form1.resources
+H:\methods\methods\obj\x86\Debug\methods.Properties.Resources.resources
+H:\methods\methods\obj\x86\Debug\methods.csproj.GenerateResource.Cache
+H:\methods\methods\obj\x86\Debug\methods.exe
+H:\methods\methods\obj\x86\Debug\methods.pdb

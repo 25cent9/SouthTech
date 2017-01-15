@@ -1,0 +1,4 @@
+H:\mileToFeet\mileToFeet\bin\Debug\mileToFeet.exe
+H:\mileToFeet\mileToFeet\bin\Debug\mileToFeet.pdb
+H:\mileToFeet\mileToFeet\obj\x86\Debug\mileToFeet.exe
+H:\mileToFeet\mileToFeet\obj\x86\Debug\mileToFeet.pdb

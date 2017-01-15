@@ -1,0 +1,14 @@
+﻿Build started 10/29/2015 12:37:34 PM.
+     1>Project "H:\inventoryBins\inventoryBins\inventoryBins.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\inventoryBins.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt inventoryBins.cpp
+     1>cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
+         inventoryBins.cpp
+     1>h:\inventorybins\inventorybins\inventorybins.cpp : fatal error C1033: cannot open program database 'h:\inventorybins\inventorybins\debug\vc100.idb'
+     1>Done Building Project "H:\inventoryBins\inventoryBins\inventoryBins.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.62

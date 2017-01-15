@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/8/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> JavaScript ex </title>
+	<script type="text/javascript">
+	function oldMac(){
+		songWords("chicken","cluck");
+		songWords("cow","moo");
+		songWords("horse","neigh");
+		songWords("duck","quack");
+		songWords("mouse","squeak");
+		songWords("dog","woof");
+		songWords("sheep","baa");
+		songWords("cat","meow");
+	}
+	
+	function songWords(animal, sound){
+		document.write("<p>Old Macdonald had a farm, E-I-E-I-O <br />");
+		document.write("and on his farm he had a "+animal+" E-I-E-I-O <br />");
+		document.write("with a "+sound+" "+sound+" here and a "+sound+" "+sound+" there. Here a "+sound+" there a "+sound+" everywhere a "+sound+" "+sound+" E-I-E-I-O<br />");
+		document.write("Old Macdonald had a farm, E-I-E-I-O </p>");
+	}
+	/*
+	var answer=0;
+	function addIt(){
+	var intNum1, intNum2, intAnswer=0;
+	//Get the strings
+	intNum1=parseInt(document.getElementById('firstNum').value);
+	intNum2=parseInt(document.getElementById('secondNum').value);
+	//Convert the strings into numbers
+	
+	//Add numbers together
+	intAnswer=intNum1+intNum2;
+	//Move total to window
+	document.getElementById('answer').value=intAnswer;
+	}	
+	function clearIt(){
+		document.getElementById('firstNum').value="";
+		document.getElementById('secondNum').value="";
+		document.getElementById('answer').value="";
+	}
+	*/
+		/*
+		var num1 = 1;
+		var num2 = 3;
+		var sum= num1+num2;
+		
+	
+			alert("Today is Giffen's birthday, The value of sum is "+sum);
+			sum="job";
+
+			alert("The value of sum is "+sum);
+			 num1="kmart ";
+			sum= num1+ num2;
+			alert("sum is equal to "+ sum);
+			var answer="";
+			answer=prompt("What is your phone number?");
+		
+		
+		var pet="";
+		var color="";
+		var food="";
+		
+		pet=prompt("What is your favorite pet?");
+		color=prompt("What is your favorite color?");
+		food=prompt("What is your favorite food?");
+		*/
+	</script>
+</head>
+
+<body>
+
+<form>
+
+<h1>Add 2 Numbers</h2>
+<input type="text" size="2" placeholder="0" id="firstNum"/>&nbsp; + &nbsp;
+<input type="text" size="2" placeholder="0" id="secondNum"/> &nbsp; = &nbsp;
+<input type="text" size="2" id="answer" readonly  />
+<br /><input type="button" value="Add It Up" onclick="addIt(firstNum, secondNum)"/>
+<input type="button" value="Clear" onclick="clearIt()"/>
+<input type="button" value="Song" onclick="oldMac()"/>
+</form>
+<!--
+<form name="fruit" id="fruit">
+
+	What is your favorite fruit?
+	<input type="text" id="fr" name="fr" />
+	<input type="button" value="Fruitinate" onclick="alert('Your favorite fruit is: ' +document.getElementById('fr').value);" />
+
+	<br />
+	
+	What is your favorite hobby?
+	<input type="text" id="hb" name="hb" />
+	<input type="button" value="Hobbify" onclick="document.write('Your favorite hobby is: ' +document.getElementById('hb').value);" />
+		<br />
+		<br />
+	
+	Gender: 
+	<br /><input type="radio" id="gen" name="gen" value="Female"> Female
+	<br /><input type="radio" id="gen" name="gen" value="Male"> Male
+	<br /><input type="button" onclick="alert(document.getElementById('gen').value);" value="Click for gender">
+</form>
+-->
+<!--
+	<script type="text/javascript">
+		document.write("<h1 style='text-align: center; color: green; font-size:100px'>Happy Birthday Griffen</h1>");
+		document.write("<p style='color: blue'>Your phone number is "+answer+".</p>");
+	
+	</script>
+	<h1>
+		10/2/2014
+	</h1>
+-->
+	<script type="text/javascript">
+	/*
+		document.write(pet+" "+color+" "+food);
+		
+		document.write("<br />"+pet+"<br />");
+		document.write(color+"<br />");
+		document.write(food+"<br />");
+	*/
+	</script>
+</body>
+
+</html>

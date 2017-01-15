@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Do while example - post test loop</title>
+	<script type="text/javascript">
+	//Do while loop that adds two numbers
+	//Innocent Niyibizi 
+	//11-13-14
+	
+	//variables
+	var num1, num2, total, more, err, err2;
+	
+	document.write("<h1> Addition program - it repeats until you choose to quit</h1>");
+	
+	//Start loop, prompt for 2 numbers
+	
+	do{
+		err=0;
+		err2=0;
+		num1=prompt("Enter the first number: ");
+		err=validateInput(num1);
+		num2=prompt("Enter the second number");
+		err2=validateInput(num2);
+		if(err==0 && err2==0){
+			num1=parseFloat(num1);
+			num2=parseFloat(num2);
+			//Add numbers and display total
+			total=num1+num2;
+			document.write("The sum of the two numbers: "+total+"<br />");
+			
+			//Ask whether to continue, end loop
+			more=prompt("More numbers to add (y/n)?");
+		}
+		else{
+			more="y";
+		}
+	}
+	
+	while(more.toUpperCase()=="Y")	
+	
+	function validateInput(x){
+		var er=0;
+		if(isNaN(x) || x=="" || x==" "){
+			alert("You entered an invalid number");
+			er=1;
+		}
+		else{
+			return er;
+		}
+	}
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

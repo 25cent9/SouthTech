@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Watt Gives </title>
+	<script type="text/javascript">
+	 
+		/*
+			Name: Innocent Niyibizi
+			Date: 10/3/14
+			Purpose: To collect data for Watt Gives invoice
+		*/
+		//Declaring variables
+		var bBusinessName="";
+		var cBusinessName="";
+		var totHours=0;
+		var ratePerHour=0;
+		var totAmnt=0;
+		
+		//Getting input
+		bBusinessName=prompt("Briana, please enter the your business name. ");
+		cBusinessName=prompt("Please enter the the client's business name. ");
+		
+		totHours=prompt("How many hours were worked?");
+		ratePerHour=prompt("What is the hourly rate?");
+		
+		//Finding the total amount
+		totAmnt=parseInt(totHours)*parseInt(ratePerHour);
+	</script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		//Writing outputs 
+		document.write("<h1>"+bBusinessName+"</h1>");
+		document.write("<br />Client Business: "+cBusinessName);
+		document.write("<br />Hours: "+totHours);
+		document.write("<br />Hourly rate: "+ratePerHour);
+		document.write("<hr />");
+		document.write("<br /> The total bill amount is : $"+totAmnt);
+		
+	</script>
+
+</body>
+
+</html>

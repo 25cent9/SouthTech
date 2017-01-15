@@ -1,0 +1,4 @@
+H:\initials\initials\bin\Debug\initials.exe
+H:\initials\initials\bin\Debug\initials.pdb
+H:\initials\initials\obj\x86\Debug\initials.exe
+H:\initials\initials\obj\x86\Debug\initials.pdb

@@ -1,0 +1,4 @@
+H:\Critter\Critter\bin\Debug\Critter.exe
+H:\Critter\Critter\bin\Debug\Critter.pdb
+H:\Critter\Critter\obj\x86\Debug\Critter.exe
+H:\Critter\Critter\obj\x86\Debug\Critter.pdb

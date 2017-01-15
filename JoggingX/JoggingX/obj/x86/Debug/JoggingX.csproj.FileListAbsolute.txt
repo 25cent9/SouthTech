@@ -1,0 +1,7 @@
+H:\JoggingX\JoggingX\bin\Debug\JoggingX.exe
+H:\JoggingX\JoggingX\bin\Debug\JoggingX.pdb
+H:\JoggingX\JoggingX\obj\x86\Debug\JoggingX.Form1.resources
+H:\JoggingX\JoggingX\obj\x86\Debug\JoggingX.Properties.Resources.resources
+H:\JoggingX\JoggingX\obj\x86\Debug\JoggingX.csproj.GenerateResource.Cache
+H:\JoggingX\JoggingX\obj\x86\Debug\JoggingX.exe
+H:\JoggingX\JoggingX\obj\x86\Debug\JoggingX.pdb

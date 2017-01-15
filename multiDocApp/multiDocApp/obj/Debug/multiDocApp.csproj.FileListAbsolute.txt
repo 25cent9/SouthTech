@@ -1,0 +1,10 @@
+H:\multiDocApp\multiDocApp\bin\Debug\multiDocApp.exe.config
+H:\multiDocApp\multiDocApp\bin\Debug\multiDocApp.exe
+H:\multiDocApp\multiDocApp\bin\Debug\multiDocApp.pdb
+H:\multiDocApp\multiDocApp\obj\Debug\multiDocApp.csprojResolveAssemblyReference.cache
+H:\multiDocApp\multiDocApp\obj\Debug\multiDocApp.childForm.resources
+H:\multiDocApp\multiDocApp\obj\Debug\multiDocApp.Form1.resources
+H:\multiDocApp\multiDocApp\obj\Debug\multiDocApp.Properties.Resources.resources
+H:\multiDocApp\multiDocApp\obj\Debug\multiDocApp.csproj.GenerateResource.Cache
+H:\multiDocApp\multiDocApp\obj\Debug\multiDocApp.exe
+H:\multiDocApp\multiDocApp\obj\Debug\multiDocApp.pdb

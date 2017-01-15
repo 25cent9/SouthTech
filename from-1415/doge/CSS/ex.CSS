@@ -1,0 +1,21 @@
+body{
+	background-image: url(../pics/clouddoge.png);
+	background-size: 100%;
+
+}
+
+h1,h2,p,blockquote{
+	color: black; 
+	font-family: Comic Sans MS, Arial, Garamond;
+	font-size: 25pt;
+}
+
+a{
+	text-decoration: none;
+	background-color: transparent;
+	color: black;
+}
+
+a:hover{
+	color: white;
+}

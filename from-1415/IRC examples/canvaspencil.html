@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 1-14-15-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Canvas Pencil </title>
+	<script type="text/JavaScript">
+		function f1(){
+			var canvas = document.getElementById('pencil');
+			var context=canvas.getContext('2d');
+			context.fillStyle="rgb(255,192,203)";
+			context.fillRect(10,10,55,50);
+			
+			context.fillStyle="rgb(128,128,128)";
+			context.fillRect(8,50,60,10);
+			
+			context.fillStyle="rgb(255,255,0)";
+			context.fillRect(10,60,55,70);
+			
+			context.beginPath();
+			context.moveTo(12,130);
+			context.lineTo(37,200);
+			context.stroke();
+			context.moveTo(37,200);
+			context.lineTo(64,130);
+			context.stroke();
+			context.closePath();
+			
+			context.fillStyle="rgb(0,0,0)";
+			context.beginPath();
+			context.moveTo(30,180);
+			context.lineTo(37,200);
+			context.lineTo(45,180);
+			context.stroke();
+			context.closePath();
+			context.fill();
+			
+		}
+	</script>
+</head>
+
+<body onload="f1();">
+<canvas id="pencil" width="300" height="200">
+</canvas>
+<figcaption>
+	Get the point!
+</figcaption>
+
+
+</body>
+
+</html>

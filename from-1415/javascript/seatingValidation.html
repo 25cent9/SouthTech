@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/30/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>  </title>
+	<script type="text/javascript">
+	function seats(){
+	var name=document.getElementById('name').value;
+	var elem;
+	var nums;
+	var totalPrice;
+	
+	var balconyPrice=15.50;
+	var mainPrice=30;
+	var orchestraPrice=25;
+	var balc=document.getElementById('balcony').value;
+	var main=document.getElementById('main').value;
+	var orchest=document.getElementById('orchestra').value;
+	
+		if(name.length==0){
+			alert("Please enter a name");
+		}
+		else{
+			validateName();
+		}
+		
+		function validateName(){
+			elem=/^[a-zA-Z0-9]+$/;
+			if(!name.match(elem)){
+				alert("Please enter a valid name");
+			}
+			else{
+				validatePrices();
+			}
+		}
+		
+		function validatePrices(){
+			nums=/^[0-9]+$/;
+			
+			if(parseFloat(balc)==parseInt(balc) && !isNaN(balc) >0 && parseFloat(main)==parseInt(main) && !isNaN(main) >0 && parseFloat(orchest)==parseInt(orchest) && !isNaN(orchest) >0 ){
+				calculate();
+			}
+			
+			else if(parseFloat(orchest)!=parseInt(orchest) && !isNaN(orchest) || orchest.length==0 || !orchest.match(nums)){
+				alert("Please enter a valid number for orchestra");
+			}
+			
+			else if(parseFloat(main)!=parseInt(main) && !isNaN(main) || main.length==0 || !main.match(nums)){
+				alert("Please enter a valid number for main");
+			}
+			
+			else if(parseFloat(balc)!=parseInt(balc) && !isNaN(balc) || balc.length==0 || !balc.match(nums)){
+				alert("Please enter a valid number for balcony");
+			}
+			
+		}
+			
+		function calculate(){
+			alert("Calculation has started");
+			totalPrice=parseInt(balc)*balconyPrice+(parseInt(main)*mainPrice)+(parseInt(orchest)*orchestraPrice);
+			document.getElementById('total').value="$"+totalPrice.toFixed(2);
+		}
+	}
+	</script>
+</head>
+
+<body>
+<form>
+<h2>The Thearte</h2>
+Name: <input type="text" id="name" />
+<br />
+<br />
+Seating:<br />
+Orchestra $25: <input type="text" id="orchestra" size="1" value="0" /><br />
+Main Floor $30: <input type="text" id="main" size="1" value="0"/><br />
+Balcony $15.50: <input type="text" id="balcony" size="1" value="0"/>
+<br />
+<input type="button" value="Submit" onClick="seats();"/>
+<input type="reset" value="Clear" />
+<br />
+<br />
+Total: <input type="text" readonly id="total" size="4"/>
+</form>
+
+</body>
+
+</html>

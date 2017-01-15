@@ -1,0 +1,15 @@
+
+Canary poly:"60,409,60,320,63,320,63,312,74,300,86,311,87,320,90,320,89,409"
+
+Empire poly:""
+
+Petronas poly:"
+
+Sears poly:""
+
+Taipei poly:""
+
+CN poly:""
+KVLY-TV poly:"494,409,494,113,498,113,498"
+
+Burj poly:"

@@ -1,0 +1,4 @@
+H:\CSharpArray\CSharpArray\bin\Debug\CSharpArray.exe
+H:\CSharpArray\CSharpArray\bin\Debug\CSharpArray.pdb
+H:\CSharpArray\CSharpArray\obj\x86\Debug\CSharpArray.exe
+H:\CSharpArray\CSharpArray\obj\x86\Debug\CSharpArray.pdb

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/7/14 -->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Mailing Label </title>
+
+</head>
+
+<body>
+	<form id="mail" name="mail">
+		First Name: <input type="text" id="fname" name="fname" />
+		Last Name: <input type="text" id="lname" name="lname"/><br />
+		Street Address: <input type="text" id="streetAddress" name="streetAddress"/><br />
+		City: <input type="text" id="city" name="city" />
+		State: <input type="text" id="state" name="state"/>
+		Zip: <input type="text" id="zip" name="zip"/><br />
+		
+		<input type="button" value="Input Data" onclick="document.write('Mail to:<br />'+ document.getElementById('fname').value+ ' '+document.getElementById('lname').value+'<br />'+ document.getElementById('streetAddress').value+ '<br />'+document.getElementById('city').value+', '+document.getElementById('state').value+', '+document.getElementById('zip').value)"/>	
+	</form>
+</body>
+
+</html>

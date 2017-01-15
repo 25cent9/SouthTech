@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 11/14/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Sentence  </title>
+	<script type="text/javascript">
+	var word;
+	var sent = "";
+	
+	word=prompt("Please enter the first word or '&QUIT' to end:");
+	word=valInput(word);
+	while (word.toUpperCase() !="&QUIT"){
+		sent=word+ " " +sent;
+		word=prompt("Enter next word in your sentence or '&QUIT' to end:");
+		word=valInput(word);
+	}
+	if(sent < ""){
+		document.write("<h2>Nothing was enterd</h2>");
+	}
+	else{
+		document.write("<h2>"+sent+"</h2>");
+	}
+	function valInput(w){
+			while(w=="" || w==" " || !isNaN(w)){
+				alert("Invalid input - Please reenter word, you scrub");
+				w=prompt("Please enter the next word or '&QUIT' to end:");
+			}
+		return w;
+	}
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

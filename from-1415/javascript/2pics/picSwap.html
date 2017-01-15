@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Swap Pics </title>
+	<script type="text/javascript">
+		var picNum=1;
+		
+		function switchPic(){
+			if (picNum==1){
+				document.img.src="pics/cat.jpg";
+				picNum=2;
+			}
+			if (picNum==2){
+				document.img.src="pics/dogs.jpg";
+				picNum=1;
+			}
+		
+		}
+	</script>
+</head>
+
+<body>
+<img src="pics/dogs.jpg" name="img" onmouseover="switchPic();" onmouseout="switchPic();" />
+<form>
+<input type="button" value="Open new window" onClick="window.open('newWin.html', 'mywindow')">
+</form>
+
+
+</body>
+
+</html>

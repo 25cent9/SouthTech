@@ -1,0 +1,20 @@
+c:\users\innocent\documents\visual studio 2010\Projects\Bowling\Bowling\bin\Debug\Bowling.exe
+c:\users\innocent\documents\visual studio 2010\Projects\Bowling\Bowling\bin\Debug\Bowling.pdb
+c:\users\innocent\documents\visual studio 2010\Projects\Bowling\Bowling\obj\x86\Debug\Bowling.exe
+c:\users\innocent\documents\visual studio 2010\Projects\Bowling\Bowling\obj\x86\Debug\Bowling.pdb
+C:\Users\Innocent\Documents\Visual Studio 2010\Projects\Bowling\Bowling\obj\x86\Debug\Bowling.csprojResolveAssemblyReference.cache
+E:\Bowling\Bowling\obj\x86\Debug\Bowling.exe
+E:\Bowling\Bowling\obj\x86\Debug\Bowling.pdb
+E:\Bowling\Bowling\bin\Debug\Bowling.exe
+E:\Bowling\Bowling\bin\Debug\Bowling.pdb
+E:\Bowling\Bowling\obj\x86\Debug\Bowling.csprojResolveAssemblyReference.cache
+H:\Bowling\Bowling\obj\x86\Debug\Bowling.exe
+H:\Bowling\Bowling\obj\x86\Debug\Bowling.pdb
+H:\Bowling\Bowling\bin\Debug\Bowling.exe
+H:\Bowling\Bowling\bin\Debug\Bowling.pdb
+H:\Bowling\Bowling\obj\x86\Debug\Bowling.csprojResolveAssemblyReference.cache
+D:\Bowling\Bowling\obj\x86\Debug\Bowling.exe
+D:\Bowling\Bowling\obj\x86\Debug\Bowling.pdb
+D:\Bowling\Bowling\bin\Debug\Bowling.exe
+D:\Bowling\Bowling\bin\Debug\Bowling.pdb
+D:\Bowling\Bowling\obj\x86\Debug\Bowling.csprojResolveAssemblyReference.cache

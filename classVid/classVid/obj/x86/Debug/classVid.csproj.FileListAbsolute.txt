@@ -1,0 +1,4 @@
+H:\classVid\classVid\bin\Debug\classVid.exe
+H:\classVid\classVid\bin\Debug\classVid.pdb
+H:\classVid\classVid\obj\x86\Debug\classVid.exe
+H:\classVid\classVid\obj\x86\Debug\classVid.pdb

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 2/25/15 -->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Show/hide responsively</title>
+	<style type="text/css">
+
+	</style>
+	<script type="text/JavaScript">
+		function add_para(){
+			var orign = document.getElementById('orig');
+			var new_para = document.createElement("p");
+			var current_time = new Date();
+			var month=current_time.getMonth()+1;
+			var day=current_time.getDate();
+			var year=current_time.getFullYear();
+			alert(month+"/"+day+"/"+year);
+			bDay = new Date("2/16/1974");
+			alert(bDay.getYear());
+			var this_text = "This new paragraph appeared at "+ current_time + ":";
+			//Even after the browser has rendered all HTML, it's possible to add "new" HTML elements. 
+			//createTextNode() - appendChild() - insertBefore() are a few
+			//Typical pattern for adding new textual content
+			var new_content = document.createTextNode(this_text);
+			new_para.appendChild(new_content);
+			document.body.insertBefore(new_para, orig);
+			}
+	</script>
+</head>
+
+<body>
+	<h1>Create a new element</h1>
+	<p id="orig">This is the text that will appear when the display first loads.</p>
+	<button type="button" onclick="add_para();">Click on me to add new content</button>
+	<p style="display: none;"> warning: you are within 20% of your limit.</p>
+</body>
+
+</html>

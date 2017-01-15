@@ -1,0 +1,4 @@
+H:\Lesson3Quiz\Lesson3Quiz\bin\Debug\Lesson3Quiz.exe
+H:\Lesson3Quiz\Lesson3Quiz\bin\Debug\Lesson3Quiz.pdb
+H:\Lesson3Quiz\Lesson3Quiz\obj\x86\Debug\Lesson3Quiz.exe
+H:\Lesson3Quiz\Lesson3Quiz\obj\x86\Debug\Lesson3Quiz.pdb

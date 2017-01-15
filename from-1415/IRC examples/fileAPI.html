@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>File APIs</title>
+	<script type="text/javascript">
+	/*
+		if(window.File && window.FileReader && window.FileList && window.Blob){
+			alert("Hurray! This browser supports File APIs");
+		}
+		else{
+			alert("This browser does not support File APIs");
+		}
+	*/	
+	</script>
+</head>
+<body>
+	<input type="file" id="files" name="files[]" multiple />
+	<output id="list"></output>
+	<script>
+		function handleFileSelect(evt){
+			var files = evt.target.files;	//Filelist object
+			//files are a FileList of File Objects. List some propties
+			var output = [];
+			for(var i=0, f; f=files[i]; i++){
+				output.push('<li><strong>', escape(f.name), '</strong>(',f.type || 'n/a', ')-',f.size, 'bytes, last modified: ', f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a','</li>');
+				/*
+					if(f.lastModifiedDate.toLocaleDateString()){
+					
+					}
+					else{
+						'n/a', '</li>'
+					}
+				
+				*/
+			}
+			document.getElementById('list').innerHTML = "<ul>"+output.join('')+'</ul>';
+		}
+		document.getElementById('files').addEventListener('change', handleFileSelect, false);
+		</script>
+</body>
+</html>

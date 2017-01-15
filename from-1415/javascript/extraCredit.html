@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/21/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>  </title>
+	<script type="text/javascript">
+		function Country(Name, Size, Population, Capital){
+			this.name=Name;
+			this.size=Size;
+			this.population=Population;
+			this.capital=Capital;
+			this.display=displayCountries;
+			this.newpop=newPop;
+			this.add=newCountry;
+		}
+		var BR = "<br />";
+		funtion rewrite()
+		function displayCountries(){
+			document.write(this.name+BR+this.size+BR+this.population+BR+"<b>"+this.capital+"</b>"+"<br /><br />");
+		}
+		function newPop(pop){
+			var pop=prompt("What is the new population?");
+			this.population=pop;
+			this.display();
+		}
+		function newCountry(){
+			this.name=prompt("What is the name of the country?","");
+			this.size=prompt("What is the size of the country?","");
+			this.population=prompt("What is the population of the country?","");
+			this.capital=prompt("What is the capital of the country?","");
+			displayCountries();
+		}
+		var belgium= new Country("Belgium","11,672 sq mi","10,438,353","Brussels");
+		var iceland= new Country("Iceland","38,707 sq mi","317,351","Reykjavik");
+		var mali= new Country("Mali","471,042 sq mi","15,968,882","Bamako");
+		
+		belgium.display();
+		iceland.display();
+		mali.display();
+		
+		document.write("<button onClick='newCountry.add();'> Add country </button>");
+		document.write("<button onClick='belgium.newpop();'> Change Belgium</button>");
+	</script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		
+	</script>
+
+</body>
+
+</html>

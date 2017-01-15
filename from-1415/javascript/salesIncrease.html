@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Sales Increase </title>
+	<script type="text/javascript">
+		function calcPct(){
+			//Declare variables and constants 
+			var sales2013;
+			var sales2014;
+			var rtn;
+			var diff;
+			var pctDiff;
+			var pctConv;
+			
+			function valInput(num){
+				var rtn = "T";
+				if (isNaN(num)){
+					rtn='F';
+					
+				}
+				return rtn;
+			}
+			
+			rtn = valInput(document.getElementById('sales2013').value);
+		
+			if(rtn=='F'){
+				alert("Sales figure for 2013 is invalid. PLease enter a number");
+			}
+			else{
+				rtn = valInput(document.getElementById('sales2014').value);
+				if(rtn=='F'){
+					alert("Sales figure for 2014 is invalid. PLease enter a number");
+				}
+				else{
+					sales2013 = parseFloat(document.getElementById('sales2013').value);
+					sales2014 = parseFloat(document.getElementById('sales2014').value);
+					
+					//Compare difference, divide by 2013 figure, convert to percentage and display
+					diff = sales2014 - sales2013;
+					pctDiff= diff/sales2013;
+					pctConv = pctDiff * 100.00;
+					//Display percentage in readonly text rectangle
+					document.getElementById('percent').value = pctConv.toFixed(2)+"%";
+				}
+			}
+			
+		}
+	</script>
+</head>
+
+<body>
+<form>
+	<h2>This program calculates a percentage sales increase</h2>
+	Sales figure for 20103: <input type="text" id="sales2013" /><br />
+	Sales figure for 2014: <input type="text" id="sales2014" /><br />
+	<input type="button" value="Get Percentage" onClick="calcPct();"/>
+	<br />
+	<br />
+	The percentage is: <input type="text" readonly id="percent"/>
+</form>
+
+</body>
+
+</html>

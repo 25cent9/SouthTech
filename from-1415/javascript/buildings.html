@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/23/14 -->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Buildings </title>
+	<script type="text/javascript">
+		function Building(Type, RoomNumber, Size, Shape, Cost){
+			this.type=Type;
+			this.numRooms=RoomNumber;
+			this.size=Size;
+			this.shape=Shape;
+			this.cost=Cost;
+			this.display=displayInfo;
+			this.increasePrice=costIncrease;
+		}
+		function displayInfo(){
+			document.write(castle.type+":"+BR+castle.numRooms+" rooms"+BR+castle.size+" sq ft"+BR+castle.shape+BR+"$"+castle.cost+BR+BR);
+			
+			document.write(tech.type+":"+BR+tech.numRooms+" rooms"+BR+tech.size+" sq ft"+BR+tech.shape+BR+"$"+tech.cost+BR+BR);
+			
+			document.write(efferic.type+":"+BR+efferic.numRooms+" rooms"+BR+efferic.size+" sq ft"+BR+efferic.shape+BR+"$"+efferic.cost+BR+BR);
+	
+		}
+		function costIncrease(){
+			var newCastle =castle.cost*0.08;
+			castle.cost=castle.cost+newCastle;
+			castle.cost=castle.cost.toFixed(2);
+			
+			var newTech=tech.cost*0.02;
+			tech.cost=tech.cost+newTech;
+			tech.cost=tech.cost.toFixed(2);
+			
+			var newEfferic=efferic.cost*0.12;
+			efferic.cost=efferic.cost+newEfferic;
+			efferic.cost=efferic.cost.toFixed(2);
+			
+			displayInfo();
+		}
+		var BR = "<br />";
+	
+		var castle = new Building("Castle", 250, 1500, "HyperCube", 1542694.13);
+		var tech = new Building("Tech", 60, 36000, "Quad", 5639274.11);
+		var efferic = new Building("Efferic", 103, 439142, "Polyrific", 14396247.05);
+		displayInfo();
+	</script>
+</head>
+
+<body>
+<form name="increase" id="increase">
+	<input type="button" value="Increase Price" onClick="costIncrease();"/> 
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> While loop </title>
+	<script type="text/javascript">
+	//Program will use a while loop
+	//use a loop to accumulate donations
+	//Innocent Niyibizi 
+	//11-12-14
+	var numCans;
+	var totalCans=0;
+	
+	document.write("<h1 style='color: blue; text-align: center'>Canned food donation program</h1>");
+	
+	numCans=prompt("Enter numebr of cans or -1 to quit","");
+	numCans=parseInt(numCans);
+	
+	while(numCans != -1){
+		totalCans=totalCans+numCans;
+		//totalCans += numCans;
+		
+		document.write("Total so far is "+totalCans+"<br />");
+		
+		numCans=prompt("Enter numebr of cans or -1 to quit","");
+		numCans=parseInt(numCans);
+		
+	}
+	
+	document.write("Thank you for your donations! <br />");
+	document.write("Total number of cans donated: "+totalCans);
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

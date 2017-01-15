@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/15/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Car Show </title>
+	<script type="text/javascript">
+		function Car(year, make, model, color){
+			this.Year=year;
+			this.Make=make;
+			this.Model=model;
+			this.Color=color;
+		}
+		function carShow(){
+	
+			var car1= new Car(2004, "Marza", "RX-8", "Gray");
+			var car2= new Car(2014, "Mazda", "2", "Purple" );
+			var car3= new Car(2014, "Honda", "Accord", "Brown" );
+			var car4= new Car(2013, "Cadillac", "CTS", "Black" );
+			
+	
+			document.autoMobile.yearMade1.value=car1.Year;
+			document.autoMobile.carMake1.value=car1.Make;
+			document.autoMobile.carModel1.value=car1.Model;
+			document.autoMobile.carColor1.value=car1.Color;
+			
+			document.autoMobile.yearMade2.value=car2.Year;
+			document.autoMobile.carMake2.value=car2.Make;
+			document.autoMobile.carModel2.value=car2.Model;
+			document.autoMobile.carColor2.value=car2.Color;
+			
+			document.autoMobile.yearMade3.value=car3.Year;
+			document.autoMobile.carMake3.value=car3.Make;
+			document.autoMobile.carModel3.value=car3.Model;
+			document.autoMobile.carColor3.value=car3.Color;
+			
+			document.autoMobile.yearMade4.value=car4.Year;
+			document.autoMobile.carMake4.value=car4.Make;
+			document.autoMobile.carModel4.value=car4.Model;
+			document.autoMobile.carColor4.value=car4.Color;
+	
+		}
+	</script>
+</head>
+
+<body>
+<h1>Cars Galore</h1>
+<form name="autoMobile">
+	<table style="border: 0;">
+		<tr>
+			<td>Year</td>
+			<td>Make</td>
+			<td>Model</td>
+			<td>Color</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="yearMade1" id="yearMade1" size="4"/></td>
+			<td><input type="text" name="carMake1" id="carMake1" size="15"/></td>
+			<td><input type="text" name="carModel1" id="carModel1" size="15"/></td>
+			<td><input type="text" name="carColor1" id="carColor1" size="8"/></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="yearMade2" id="yearMade2" size="4"/></td>
+			<td><input type="text" name="carMake2" id="carMake2" size="15"/></td>
+			<td><input type="text" name="carModel2" id="carModel2" size="15"/></td>
+			<td><input type="text" name="carColor2" id="carColor2" size="8"/></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="yearMade3" id="yearMade3" size="4"/></td>
+			<td><input type="text" name="carMake3" id="carMake3" size="15"/></td>
+			<td><input type="text" name="carModel3" id="carModel3" size="15"/></td>
+			<td><input type="text" name="carColor3" id="carColor3" size="8"/></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="yearMade4" id="yearMade4" size="4"/></td>
+			<td><input type="text" name="carMake4" id="carMake4" size="15"/></td>
+			<td><input type="text" name="carModel4" id="carModel4" size="15"/></td>
+			<td><input type="text" name="carColor4" id="carColor4" size="8"/></td>
+		</tr>
+	</table>
+	<p>
+		<input type="button" name="showCars" value="Car Show" onclick="carShow();"/>
+		<input type="reset" name="reset" value="Reset" />
+	</p>
+</form>
+
+
+
+
+
+</body>
+
+</html>

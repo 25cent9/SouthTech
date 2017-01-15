@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Multi dimensional </title>
+	<script type="text/JavaScript">
+	//Set up grades array
+	var WEEKS=3;
+	var DAYS=7;
+	var weekIndex, dayIndex;
+	var temps = new Array(WEEKS);
+	
+	//Declare second dimesion of array
+	//Each week element is an array of days
+	for(weekIndex=0; weekIndex<WEEKS; weekIndex++){
+		temps[weekIndex]=new Array(DAYS);
+	}
+	
+	//Prompt user to populate array
+	for(weekIndex=0; weekIndex<WEEKS; weekIndex++){
+		for(dayIndex=0; dayIndex<DAYS; dayIndex++){
+			temps[weekIndex][dayIndex]=prompt("Enter the temperature for the week "+(weekIndex+1)+" Day "+(dayIndex+1));
+		}
+	}
+	for(weekIndex=0; weekIndex<WEEKS; weekIndex++){
+		for(dayIndex=0; dayIndex<DAYS; dayIndex++){
+			document.write(temps[weekIndex][dayIndex]+" ");
+		}
+		document.write("<br />");
+	}
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+
+</body>
+
+</html>

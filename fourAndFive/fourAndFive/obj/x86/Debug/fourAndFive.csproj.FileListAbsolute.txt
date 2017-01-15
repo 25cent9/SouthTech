@@ -1,0 +1,5 @@
+H:\fourAndFive\fourAndFive\bin\Debug\fourAndFive.exe
+H:\fourAndFive\fourAndFive\bin\Debug\fourAndFive.pdb
+H:\fourAndFive\fourAndFive\obj\x86\Debug\fourAndFive.exe
+H:\fourAndFive\fourAndFive\obj\x86\Debug\fourAndFive.pdb
+H:\fourAndFive\fourAndFive\obj\x86\Debug\fourAndFive.csprojResolveAssemblyReference.cache

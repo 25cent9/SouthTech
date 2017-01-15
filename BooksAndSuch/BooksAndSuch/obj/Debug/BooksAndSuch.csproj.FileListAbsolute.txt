@@ -1,0 +1,9 @@
+H:\BooksAndSuch\BooksAndSuch\bin\Debug\BooksAndSuch.exe.config
+H:\BooksAndSuch\BooksAndSuch\bin\Debug\BooksAndSuch.exe
+H:\BooksAndSuch\BooksAndSuch\bin\Debug\BooksAndSuch.pdb
+H:\BooksAndSuch\BooksAndSuch\obj\Debug\BooksAndSuch.csprojResolveAssemblyReference.cache
+H:\BooksAndSuch\BooksAndSuch\obj\Debug\BooksAndSuch.Form1.resources
+H:\BooksAndSuch\BooksAndSuch\obj\Debug\BooksAndSuch.Properties.Resources.resources
+H:\BooksAndSuch\BooksAndSuch\obj\Debug\BooksAndSuch.csproj.GenerateResource.Cache
+H:\BooksAndSuch\BooksAndSuch\obj\Debug\BooksAndSuch.exe
+H:\BooksAndSuch\BooksAndSuch\obj\Debug\BooksAndSuch.pdb

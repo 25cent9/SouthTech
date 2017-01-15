@@ -1,0 +1,6 @@
+c:\users\707308\documents\visual studio 2015\Projects\dataStuctures\dataStuctures\bin\Debug\dataStuctures.exe.config
+c:\users\707308\documents\visual studio 2015\Projects\dataStuctures\dataStuctures\obj\Debug\dataStuctures.csprojResolveAssemblyReference.cache
+c:\users\707308\documents\visual studio 2015\Projects\dataStuctures\dataStuctures\bin\Debug\dataStuctures.exe
+c:\users\707308\documents\visual studio 2015\Projects\dataStuctures\dataStuctures\bin\Debug\dataStuctures.pdb
+c:\users\707308\documents\visual studio 2015\Projects\dataStuctures\dataStuctures\obj\Debug\dataStuctures.exe
+c:\users\707308\documents\visual studio 2015\Projects\dataStuctures\dataStuctures\obj\Debug\dataStuctures.pdb

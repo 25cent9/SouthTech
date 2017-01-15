@@ -1,0 +1,57 @@
+
+body{
+	font-family: Arial, Verdana, Garamond;
+	font-size: 12pt;
+}
+table{
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, Verdana, Garamond;
+	font-size: 12pt;
+}
+
+.menu{
+	text-align: center;
+	width: 60%;
+
+}
+
+.menuword{
+	width: 23%;
+}
+
+.menupipe{
+	width: 1%; 
+}
+
+.menuwordselect{
+	width: 23%; 
+	font-weight: bolder;
+	font-style: italic;
+}
+
+th{
+	color: white;
+	background-color: #ff1828;
+}
+
+caption{
+	caption-side: bottom;
+	font-style: italic;
+	
+}
+
+p{
+	margin-left: 50pt;
+	margin-right: 50pt;
+	font-family: Arial, Verdana, Garamond;
+	font-size: 12pt;
+}
+
+a{
+	text-decoration: none;
+	font-family: Arial, Verdana, Garamond;
+	font-size: 12pt;
+	color: black;
+}

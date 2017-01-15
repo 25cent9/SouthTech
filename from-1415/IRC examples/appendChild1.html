@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Appending Children 1</title>
+	<script type="text/JavaScript">
+		function myFunction(){
+			var node = document.createElement("li");
+			var textnode= document.createTextNode("Water");
+			node.appendChild(textnode);
+			document.getElementById('listI').appendChild(node);
+		}
+		function tryIt2(){
+			//Takes the last element in list2 (milk) and adds it to the end of list1. The item is gone from the second list
+			var node = document.getElementById('myList2').lastChild;
+			document.getElementById('myList1').appendChild(node);
+			
+		}
+		function alterDiv(){
+			var para = document.createElement('p');
+			var text = document.createTextNode("This is the new paragraph of text");
+			para.appendChild(text);
+			document.getElementById('myDiv').appendChild(para);
+		}
+		function addBtn(){
+			var btn = document.createElement("button");
+			var text = document.createTextNode("Click Me");
+			btn.appendChild(text);
+			document.body.appendChild(btn);
+		}
+		function addTxt(){
+			var newDiv = document.createElement('div1');
+			var newContent = document.createTextNode("Hi there and greetings!");
+			//Adds textNode to newly created div
+			newDiv.appendChild(newContent);
+			//Add newly created element and its content into the DOM
+			var currentDiv = document.getElementById("div1");
+			document.body.insertBefore(newDiv, currentDiv);
+		}
+	</script>
+</head>
+
+<body>
+	<ul id="listI">
+		<li>Coffee</li>
+		<li>Tea</li>
+	</ul>
+	<br /><br />
+	<button onclick="myFunction();">try it</button>
+	<br />********************************<br />
+	<ul id="myList1">
+		<li>Coffee</li>
+		<li>Tea</li>
+	</ul>
+	<ul id="myList2">
+		<li>Water</li>
+		<li>Milk</li>
+	</ul>
+	<button onclick="tryIt2();">try it</button>
+	<br />********************************<br />
+	<div id="myDiv">
+		This is a div element 
+	</div>
+	<button onclick="alterDiv();">try it</button>
+	<br />********************************<br />
+	<button onclick="addBtn();">try it</button>
+	<br />********************************<br />
+	<div id="div1">The text above has been created dynamically</div>
+	<button onclick="addTxt();">try it</button>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pet Insurance</title>
+	<script type="text/javascript">
+	/*
+		Name: Innocent Niyibizi
+		Date: 10/27/14
+		Purpose: To find the amount of money that one will pay depending on their pet 
+	
+	*/
+		var animal=prompt("What pet do you have?");
+		var pet=" ";
+		
+		if (animal==="D" || animal==="d" || animal==="Dog" || animal==="dog"){
+			pet="dog";
+		}
+		else if(animal==="C" || animal==="c" || animal==="Cat" || animal==="cat"){
+			pet="cat"
+		}
+		else if(animal==="B" || animal==="b" || animal==="Bird" || animal==="bird"){
+			pet="bird"
+		}
+		else if(animal==="R" || animal==="r" || animal==="Reptile" || animal==="reptile"){
+			pet="reptile"
+		}
+		else{
+			alert("Please enter a valid pet");
+		}
+		
+		if(pet==="dog" || pet==="cat"){
+			var neutered=prompt("Has your "+pet+" been neutered?");
+		}
+		if(pet==="cat"){
+			if(neutered==="Yes" || neutered==="yes" || neutered==="Y" || neutered==="y"){
+				document.write("The insurance that you will need to pay for your cat will be: <br /> $40");
+			}
+			else{
+				document.write("The insurance you will need to pay for your cat is: <br /> $60");
+			}
+		}
+		
+		if(pet==="dog"){
+			if(neutered==="Yes" || neutered==="yes" || neutered==="Y" || neutered==="y"){
+				document.write("The insurance that you will need to pay for your dog will be: <br /> $50");
+			}
+			else{
+				document.write("The insurance you will need to pay for your dog is: <br /> $80");
+			}
+		}
+		
+		if(pet==="bird" || pet==="reptile"){
+			document.write("There is no fee for your "+pet);
+		}
+		
+	</script>
+</head>
+<body>
+
+
+
+</body>
+</html>

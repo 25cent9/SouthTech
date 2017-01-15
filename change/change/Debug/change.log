@@ -1,0 +1,28 @@
+﻿Build started 11/4/2015 1:04:02 PM.
+     1>Project "H:\change\change\change.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\change.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\change.exe.embed.manifest.res" Debug\change_manifest.rc 
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\change\Debug\change.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\change.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\change\Debug\change.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\change\Debug\change.lib" /MACHINE:X86 Debug\change.exe.embed.manifest.res
+         Debug\change.obj
+         Debug\main.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\change.exe.embed.manifest" /manifest Debug\change.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\change.exe.embed.manifest.res" Debug\change_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\change\Debug\change.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\change.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\change\Debug\change.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\change\Debug\change.lib" /MACHINE:X86 Debug\change.exe.embed.manifest.res
+         Debug\change.obj
+         Debug\main.obj
+         change.vcxproj -> H:\change\Debug\change.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\change.unsuccessfulbuild".
+         Touching "Debug\change.lastbuildstate".
+     1>Done Building Project "H:\change\change\change.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.27

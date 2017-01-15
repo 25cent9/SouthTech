@@ -1,0 +1,11 @@
+H:\SimpleDataApp\SimpleDataApp\bin\Debug\SimpleDataApp.exe.config
+H:\SimpleDataApp\SimpleDataApp\bin\Debug\SimpleDataApp.exe
+H:\SimpleDataApp\SimpleDataApp\bin\Debug\SimpleDataApp.pdb
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.csprojResolveAssemblyReference.cache
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.frmFillOrCancel.resources
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.frmMenu.resources
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.frmNewCustomer.resources
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.Properties.Resources.resources
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.csproj.GenerateResource.Cache
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.exe
+H:\SimpleDataApp\SimpleDataApp\obj\Debug\SimpleDataApp.pdb

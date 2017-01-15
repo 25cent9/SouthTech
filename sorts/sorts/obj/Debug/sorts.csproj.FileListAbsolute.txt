@@ -1,0 +1,6 @@
+H:\sorts\sorts\bin\Debug\sorts.exe.config
+H:\sorts\sorts\bin\Debug\sorts.exe
+H:\sorts\sorts\bin\Debug\sorts.pdb
+H:\sorts\sorts\obj\Debug\sorts.csprojResolveAssemblyReference.cache
+H:\sorts\sorts\obj\Debug\sorts.exe
+H:\sorts\sorts\obj\Debug\sorts.pdb

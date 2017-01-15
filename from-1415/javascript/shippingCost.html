@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shipping Cost Calculator</title>
+	<style type="text/css">
+	<!--
+		body{
+			font-family: Comic Sans MS;
+		}
+	-->	
+	</style>
+</head>
+<body>
+<h2>Shipping Cost Calculator</h2>
+<form>
+Your orders: <br />
+<textarea readonly id="orders" rows="10" cols="65" ></textarea>
+</form>
+<script type="text/javascript">
+/*
+Name: Innocent Niyibizi
+Date: 11/18/14
+*/
+	var handling=3;
+	var weight;
+	var shipping;
+	var additional=0;
+	var additionalHandling=0;
+	function validateInput(value){
+		while(isNaN(value)){
+			value=prompt("Invalid number, please enter a new one");
+			value=parseFloat(value);
+			weight=value;
+		}
+	}
+	
+	weight=prompt("Please enter weight, in pounds. 0 or anything less than 0 to quit");
+	weight=parseFloat(weight);
+	validateInput(weight);
+	
+	while(weight>0 && weight!=0){
+		if(weight<=10){
+			shipping="free";
+			document.getElementById('orders').value +="Your package weighs "+weight.toFixed(2)+" pounds. You will recieve free shipping \r";
+		}
+		else{
+			additional=weight-10;
+			additionalHandling=handling+(additional*0.25);
+			additionalHandling=parseFloat(additionalHandling);
+			document.getElementById('orders').value +="Your package weighs "+weight.toFixed(2)+" pounds. Handling will be $"+additionalHandling.toFixed(2)+"\r";
+		}
+		
+		weight=prompt("Please enter weight, in pounds. 0 or anything less than 0 to quit");
+		weight=parseFloat(weight);
+		validateInput(weight);
+	}
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+h1,h2,p{
+	font-family: Comic Sans MS, Arial, Times New Roman;
+
+}
+body{
+	background-image: url("../pics/swords.jpg");
+	background-size: 100%;	
+	font-family: Comic Sans MS, Arial, Times New Roman;
+}
+#sideright{
+	width: 20%; 
+	float: right; 
+	height: 100%; 
+	display: inline;
+}
+#sideleft{
+	width: 20%; 
+	float: left; 
+	height: 100%; 
+	display: inline;
+}
+#middle{
+	width: 60%;
+	float: left;
+	height: 100%;
+	display: inline;
+	background-color: lightblue; 
+	padding: 20px;
+	top: 0;
+}
+
+#sidebar{
+	background-color: #205196;
+	border: 5px ridge #F75548;
+	width: 25%; 
+	height: auto; 
+	float: right
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+table,td,th{
+	border: 2px outset red;
+	border-spacing: 0px;
+}

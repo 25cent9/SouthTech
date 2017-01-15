@@ -1,0 +1,4 @@
+H:\TaxAdvantage\TaxAdvantage\bin\Debug\TaxAdvantage.exe
+H:\TaxAdvantage\TaxAdvantage\bin\Debug\TaxAdvantage.pdb
+H:\TaxAdvantage\TaxAdvantage\obj\x86\Debug\TaxAdvantage.exe
+H:\TaxAdvantage\TaxAdvantage\obj\x86\Debug\TaxAdvantage.pdb

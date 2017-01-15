@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/15/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Classes </title>
+	<script type="text/javascript">
+
+	//This is a class for a book
+	function WBook(bookname, writer, yearPublished){
+		this.Title=bookname;
+		this.Author=writer;
+		this.CopyrightYear=yearPublished;
+		//Defining a method for the object WBook
+		this.displayTitle=showTitle;
+		this.displayAuthor=IdentityAuthor;
+		this.displayYear=showBookYear;
+	}
+	function showTitle(){
+		document.frmBooks.txtTitle1.value=this.Title;
+	}
+	function IdentityAuthor(){
+		document.frmBooks.txtAuthor1.value=this.Author;
+	}
+	function showBookYear(){
+		document.frmBooks.txtCopyrightYear1.value=this.CopyrightYear;
+	}
+	function displayCollection(){
+		var aBook=new WBook("Computer Organization", "Greg W. Scragg", 1992);
+		aBook.displayTitle();
+		aBook.displayAuthor();
+		aBook.displayYear();
+	}
+	
+	function displayCollection2(){
+		//Instantiating 3 objects using the class of WBook
+		// or creating 3 new objects from the WBook class
+		var book1= new WBook("How to play Piano","Roger Evans", 1981);
+		var book2= new WBook("Teach yourself Perl in 24 Hours","Clinton Pierce", 1996);
+		var book3= new WBook("Envoirmental Goverenance","Lamont C. Hempel", 1996);
+		
+		//Move class data to form
+		document.frmBooks.txtTitle1.value=book1.Title;
+		document.frmBooks.txtAuthor1.value=book1.Author;
+		document.frmBooks.txtCopyrightYear1.value=book1.CopyrightYear;
+		
+		document.frmBooks.txtTitle2.value=book2.Title;
+		document.frmBooks.txtAuthor2.value=book2.Author;
+		document.frmBooks.txtCopyrightYear2.value=book2.CopyrightYear;
+		
+		document.frmBooks.txtTitle3.value=book3.Title;
+		document.frmBooks.txtAuthor3.value=book3.Author;
+		document.frmBooks.txtCopyrightYear3.value=book3.CopyrightYear;
+	}
+
+	</script>
+</head>
+
+<body>
+<h1> Book Collection </h1>
+<form name="frmBooks">
+	<table border="0" width="69%">
+		<tr>
+			<td width="16%">Title</td>
+			<td width="30%">Author</td>
+			<td width="54%">&copy; Year</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="txtTitle1" id="txtTitle1" size="31"/></td>
+			<td><input type="text" name="txtAuthor1" id="txtAuthor1" size="31"/></td>
+			<td><input type="text" name="txtCopyrightYear1" id="txtCopyrightYear1" size="31"/></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="txtTitle2" id="txtTitle2" size="31"/></td>
+			<td><input type="text" name="txtAuthor2" id="txtAuthor2" size="31"/></td>
+			<td><input type="text" name="txtCopyrightYear2" id="txtCopyrightYear2" size="31"/></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="txtTitle3" id="txtTitle3" size="31"/></td>
+			<td><input type="text" name="txtAuthor3" id="txtAuthor3" size="31"/></td>
+			<td><input type="text" name="txtCopyrightYear3" id="txtCopyrightYear3" size="31"/></td>
+		</tr>
+	</table>
+	<p>
+		<input type="button" value="Show Collection" name="btnShow" onClick="displayCollection();" />
+		<input type="reset" value="Reset" name="btnReset" />
+	</p>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+@Java
+method go(){
+   if(isClear(AHEAD)){
+      hop();
+   }
+}
+@@
+method main(){
+   Jeroo inno = new Jeroo(0,0,1);
+   inno.hop(2);
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Form Management</title>
+	<script type="text/JavaScript">
+	/*The action of the correct()
+	 function is to test the characters the user has entered against the pattern 'XXX-XXX-XX-X'. If the
+	 // user's entry does not match this
+	 pattern,
+	 // remove the last character. This
+	 gives the
+	 // user the impression that she or
+	 he can only
+	 // enter valid characters.
+	 */
+		function correct(){
+			var inp = document.getElementById('serial');
+			var value = inp.value;
+			var currLength = value.length;
+			if(currLength){
+				var lastChar = value.substring(currLength-1);
+				switch (currLength){
+					case 4:
+					case 8:
+					case 11:
+						if(lastChar != "-"){
+							value = value.substring(0, currLength-1);
+						}
+						break;
+					default:
+						if(!/\d/.test(lastChar)){
+							value = value.substring(0, currLength-1);
+						}
+				}
+				if(currLength > 12){
+					value = value.substring(0, currLength-1);
+				}
+				currLength = value.length;
+				switch(currLength){
+					case 3:
+					case 7:
+					case 10:
+						value += "-";
+				}
+				inp.value = value;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		Enter here a serial number in the pattern xxx-xxx-xx-x, where each x is a digit:
+		<input id="serial" type="text" size="12" onkeyup="correct();"/>
+
+
+	</form>
+</body>
+
+</html>

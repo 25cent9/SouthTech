@@ -1,0 +1,9 @@
+H:\mouseClick\mouseClick\bin\Debug\mouseClick.exe.config
+H:\mouseClick\mouseClick\bin\Debug\mouseClick.exe
+H:\mouseClick\mouseClick\bin\Debug\mouseClick.pdb
+H:\mouseClick\mouseClick\obj\Debug\mouseClick.csprojResolveAssemblyReference.cache
+H:\mouseClick\mouseClick\obj\Debug\mouseClick.Form1.resources
+H:\mouseClick\mouseClick\obj\Debug\mouseClick.Properties.Resources.resources
+H:\mouseClick\mouseClick\obj\Debug\mouseClick.csproj.GenerateResource.Cache
+H:\mouseClick\mouseClick\obj\Debug\mouseClick.exe
+H:\mouseClick\mouseClick\obj\Debug\mouseClick.pdb

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Grid Example </title>
+	<script type="text/JavaScript">
+	
+	</script>
+	<style type="text/css">
+		#grid{
+			background-color: palegoldenrod;
+			border: silver;
+			display: -webkit-grid;
+			display: -ms-grid;
+			color: white;
+			font-family: sans-serif;
+			font-weight: bold;
+			-webkit-grid-columns: 50px 6em auto;
+			-ms-grid-columns: 50px 6em auto;
+			-webkit-grid-columns: 150px auto 2fr;
+			-ms-grid-columns: 150px auto 2fr;
+		}
+		#logo{
+			background-color: dodgerblue;
+			-ms-grid-row: 1;
+			-ms-grid-column: 1;
+			-webkit-grid-row: 1;
+			-webkit-grid-column: 1;
+		}
+		#item{
+			background-color: olive;
+			-ms-grid-row: 2;
+			-ms-grid-column: 2;
+			-webkit-grid-row: 2;
+			-webkit-grid-column: 2;
+		
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<div id="grid">
+			<div id="logo">Logo</div>
+			<div id="item">Item</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

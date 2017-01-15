@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> While loop </title>
+	<script type="text/javascript">
+	//For loop to enter student numbers
+	//Innocent Niyibizi 
+	//11-13-14
+	
+	//Variables and constants
+	var numStudents;	//Number of students to add
+	var index;			//For loop index
+	var studentName;	//Name of each student
+	var err=1;
+	var decNum;
+	var intNum;
+	var studentName;
+	
+	//Identify the program 
+	document.write("<h1>Student name entry program.</h1>");
+	
+	//Prompt for number of students to add
+	numStudents=prompt("Enter number of students to add: ");
+	
+	while(err==1){
+		if(isNaN(numStudents) || numStudents.length==0 || numStudents==" " || numStudents==""){
+			alert("Please enter a valid whole number");
+			err=1;
+			numStudents=prompt("Enter number of students to add: ");
+		}
+		else{
+			decNum=parseFloat(numStudents);
+			intNum=parseInt(numStudents);
+			if(decNum-intNum>0){
+				alert("Please enter a valid whole number");
+				err=1;
+				numStudents=prompt("Enter number of students to add: ");
+			}
+			else{
+				numStudents=intNum;
+				if(numStudents<0){
+					alert("Please enter a valid whole number");
+					err=1;
+					numStudents=prompt("Enter number of students to add: ");
+				}
+				else{
+					err=0;
+				}
+			}
+		}
+		
+	}
+	
+	//For loop asks fro names of students
+	//3 division in a for loop	Identify variable, condition, increment or decrement
+	
+	for(index=1; index<=numStudents; index++){
+		studentName=prompt("Enter the name of student #" +index);
+		document.write(index+".) "+studentName+"<br />");
+	}
+	
+	document.write("<br />The end");
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web Worker Counter</title>
+	<script type="text/javascript">
+	
+	</script>
+</head>
+<body>
+	<p>Count numbers:<output id="results"></output></p>
+	<button onclick="startWork();">Start Worker</button>
+	<button onclick="stopWork();">Stop Worker</button>
+	<script>
+		/*
+			Web Worker - Is a Javascript that runs in the background, independently from other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background
+		*/
+		var w;
+		function startWork(){
+			if(typeof(Worker)!== "undefined"){
+				if(typeof(w) == "undefined"){
+					w = new Worker("demo_workers.js");
+				}
+				w.onmessage = function(event){
+					document.getElementById("result").innerHTML=event.data;
+				}
+			}
+			else{
+				dodcument.getElementById('result').innerHTML = "Sorry! No Web Worker support";
+			}
+		}
+		function stopWork(){
+			w.terminate();
+			w = undefined;
+		}
+	</script>
+
+</body>
+</html>

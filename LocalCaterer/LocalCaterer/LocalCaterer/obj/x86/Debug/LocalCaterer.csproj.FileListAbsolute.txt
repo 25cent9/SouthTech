@@ -1,0 +1,8 @@
+c:\users\innocent\documents\visual studio 2010\Projects\LocalCaterer\LocalCaterer\bin\Debug\LocalCaterer.exe
+c:\users\innocent\documents\visual studio 2010\Projects\LocalCaterer\LocalCaterer\bin\Debug\LocalCaterer.pdb
+c:\users\innocent\documents\visual studio 2010\Projects\LocalCaterer\LocalCaterer\obj\x86\Debug\LocalCaterer.exe
+c:\users\innocent\documents\visual studio 2010\Projects\LocalCaterer\LocalCaterer\obj\x86\Debug\LocalCaterer.pdb
+H:\LocalCaterer\LocalCaterer\LocalCaterer\obj\x86\Debug\LocalCaterer.exe
+H:\LocalCaterer\LocalCaterer\LocalCaterer\obj\x86\Debug\LocalCaterer.pdb
+H:\LocalCaterer\LocalCaterer\LocalCaterer\bin\Debug\LocalCaterer.exe
+H:\LocalCaterer\LocalCaterer\LocalCaterer\bin\Debug\LocalCaterer.pdb

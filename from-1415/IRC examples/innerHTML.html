@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Inner HTML </title>
+	<script type="text/JavaScript">
+		//innerHTML property sets or returns the HTML content (inner HTML) of an element
+		function func1(){
+			var x = document.getElementById('myP').innerHTML;
+			document.getElementById('demo').innerHTML=x;
+		}
+	</script>
+</head>
+
+<body>
+	<p id="myP">I am a paragraph</p>
+	<p>Click the button <button onclick="func1()">Try It</button></p>
+	<p id="demo"></p>
+</body>
+
+</html>

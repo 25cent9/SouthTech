@@ -1,0 +1,94 @@
+@Java
+method right(){
+   if(!isClear(AHEAD) && !isWater(RIGHT)){
+      turn(RIGHT);
+   }
+}
+
+
+method left(){
+   if(isWater(AHEAD) && !isWater(LEFT)){
+      turn(LEFT);
+      
+   }
+
+}
+
+method deadEnd(){
+   
+   if(isWater(AHEAD) && isWater(RIGHT) && isWater(LEFT)){
+      turn(LEFT);
+      
+   }
+
+}
+method middle(){
+   if(isWater(RIGHT) && isClear(LEFT)){
+      turn(LEFT);
+   }
+   else if(isWater(LEFT) && isFacing(WEST) && isClear(RIGHT)){
+      turn(RIGHT);
+   }
+
+}
+
+method fourWay(){
+   if(isClear(AHEAD) && isClear(RIGHT) && isClear(LEFT) && isFacing(EAST)){
+      turn(LEFT);
+   }
+   else if(isClear(AHEAD) && isClear(LEFT) && isClear(RIGHT) && isFacing(WEST)){
+      turn(LEFT);
+   }
+   else if(isClear(AHEAD) && isClear(LEFT) && isClear(RIGHT) && isFacing(SOUTH)){
+      turn(LEFT);
+   }
+   else if(isClear(AHEAD) && isClear(LEFT) && isClear(RIGHT) && isFacing(NORTH)){
+      turn(LEFT);
+   }
+}
+
+method flowerCheck(){
+   if(isFlower(LEFT)){
+      turn(LEFT);
+   }
+   if(isFlower(HERE)){
+      pick();
+   }
+}
+
+method end(){
+   if(hasFlower()){
+      hop(0);
+   }
+}
+@@
+//NAme: Innocent Nyibzi
+//Date: 10-25-13
+//Purpose: To get the Jeroo to the flower at the end of the maze.
+
+
+method main(){
+
+Jeroo innocent = new Jeroo(2,2,NORTH);   //Starting the Jeroo at the location 2,2
+
+   while(!innocent.isWater(AHEAD)){
+      innocent.flowerCheck();  //Checking to see if there is a flower, if so Jeroo will pick it.
+      innocent.end();          //Stopping Jeroo once he has the flower
+      innocent.hop();         // Hopping when there is no water ahead
+      innocent.fourWay();      //Deciding which way to turn at an intersection of four ways
+      innocent.middle();      //decing which waay to turn when water is ahead
+      innocent.left();         //Turning left
+      innocent.right();         //Turning right
+      innocent.left();
+      innocent.deadEnd();       //Getting out of a deadend
+      innocent.left();
+      
+   } 
+
+
+
+
+
+
+
+}

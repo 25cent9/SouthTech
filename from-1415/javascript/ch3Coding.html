@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 10/22/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Trains </title>
+	<script type="text/javascript">
+		//Class for Trains
+		function Train(Type, Cars, Speed, Engines, Workers, Time){
+			this.type=Type;
+			this.numCars=Cars;
+			this.speed=Speed;
+			this.numEngines=Engines;
+			this.numWorkers=Workers;
+			this.time=Time;
+			this.change=changeNum;
+			this.display=displayTrains;
+		}
+		
+		//Function to change the number of cars, engines, and workers
+		function changeNum(){
+			this.numCars=prompt("What is the new number of cars? (If any)","");
+			this.numEngines=prompt("What is the new number of engines? (If any)","");
+			this.numWorkers=prompt("What is the new number of workers? (If any)","");
+			this.display();
+		}
+		
+		//Declaring variables for HTML break and the words car, engine, and workers
+		var BR = "<br />";
+		var car = " cars";
+		var eng = " engines";
+		var work = " workers";
+		
+		//Method to display trains
+		function displayTrains(){
+			document.write("<h1>Manhattan Train Yard </h1>");
+			
+			document.write("<b>"+train1.type+"</b>"+BR+train1.numCars+car+BR+train1.speed+BR+train1.numEngines+eng+BR+train1.numWorkers+work+BR+train1.time+BR+BR);
+			
+			document.write("<b>"+train2.type+"</b>"+BR+train2.numCars+car+BR+train2.speed+BR+train2.numEngines+eng+BR+train2.numWorkers+work+BR+train2.time+BR+BR);
+			
+			document.write("<b>"+train3.type+"</b>"+BR+train3.numCars+car+BR+train3.speed+BR+train3.numEngines+eng+BR+train3.numWorkers+work+BR+train3.time+BR+BR);
+			
+			document.write("<b>"+train4.type+"</b>"+BR+train4.numCars+car+BR+train4.speed+BR+train4.numEngines+eng+BR+train4.numWorkers+work+BR+train4.time+BR+BR);
+			
+		}
+		
+		//Instantiating 4 trains 
+		var train1 = new Train("Coal","146", "34 mph", "4", "6", "Day");
+		var train2 = new Train("Passenger","8", "65 mph", "1", "3", "Night/Day");
+		var train3 = new Train("Box Freight","126", "72 mph", "2", "5", "Night/Day");
+		var train4 = new Train("Auto Freight","72", "41 mph", "3", "6", "Day");
+		
+		//Displaying the trains
+		displayTrains();
+		
+	</script>
+</head>
+
+<body>
+
+<!--Buttons to change the train information ( If needed) -->
+<form name="buttons" id="buttons">
+	<input type="button" name="changeTrain1" value="Change Coal Train" onClick="train1.change();"/>
+	<input type="button" name="changeTrain2" value="Change Passenger Train" onClick="train2.change();"/>
+	<input type="button" name="changeTrain3" value="Change Box Freight Train" onClick="train3.change();"/>
+	<input type="button" name="changeTrain4" value="Change Auto Freight Train" onClick="train4.change();"/>
+</form>
+
+
+</body>
+
+</html>

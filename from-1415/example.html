@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Example </title>
+	<style>
+		body{
+			background-color: yellow;
+		}
+		div#container{
+			background-color: blue;
+			width: 750px;
+			margin: auto 0;
+			color: black;
+		}
+		div#header{
+			background-color: green;
+			width: 100%;
+		}
+		div#nav{
+			background-color: purple;
+			width: 180px;
+			padding: 10px;
+			float: left;
+			height:300px;
+		}
+		div#content{
+			background-color: orange;
+			width: 520px;
+			padding: 15px;
+			float: right;
+			height: 100%;
+		}
+		div#footer{
+			background: pink;
+			width: 100%;
+			clear: both;
+		}
+		
+	
+
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			Header
+		</div>
+		<div id="nav">
+			<h2>Links</h2>
+		</div>
+		<div id="content">
+			<h1>Content</h1>
+			<!-- command -->
+			<menu label="Music Genre">
+				<command type="radio" radiogroup="musicgenre" label="Art" > sw</command>
+				<command type="radio" radiogroup="musicgenre" label="Popular" >fga</command>
+				<command type="radio" radiogroup="musicgenre" label="Traditional" >gs</command>
+			</menu>
+			
+			<!-- Highlights text using the <mark> tag -->
+			<p> Don't fogret to buy <mark>milk</mark> today</p>
+			
+			<!-- Time tag does not render as anything special in any of the major browsers -->
+			<p><b>Note:</b> The time element will display<time datetime="2014-09-19 20:00"> Friday</time></p>
+			
+			<figure>
+			<img src="dogecoin2.gif" alt="gif" width="125" height="100"/>
+			<img src="dogecoin.png" alt="dodge" width="125" height="100"/>
+			<img src="dogecoin1.png" alt="coin" width="125" height="100"/>
+			<figcaption>Doge</figcaption>
+			</figure>
+			
+			<!-- Scalable vector graphic -->
+			
+			<svg xmlns="http://www.w3.org/2000/svg"version="1.1">
+				<polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:aqua;stroke:black;stroke-width:5; fill-rule:evenodd;" />
+			</svg>	
+			
+			<!-- Indicates the progress of a task -->
+			Downloading Progress: 
+			<progress value="50" max="100">
+			</progress>
+			
+			
+		</div>
+		<div id="footer">
+			Innocent Niyibizi 
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

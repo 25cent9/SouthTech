@@ -1,0 +1,26 @@
+﻿Build started 11/24/2015 12:29:41 PM.
+     1>Project "H:\killingTime\killingTime\killingTime.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\killingTime.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\killingTime.exe.embed.manifest.res" Debug\killingTime_manifest.rc 
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\killingTime\Debug\killingTime.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\killingTime.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\killingTime\Debug\killingTime.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\killingTime\Debug\killingTime.lib" /MACHINE:X86 Debug\killingTime.exe.embed.manifest.res
+         Debug\source.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\killingTime.exe.embed.manifest" /manifest Debug\killingTime.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\killingTime.exe.embed.manifest.res" Debug\killingTime_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\killingTime\Debug\killingTime.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\killingTime.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\killingTime\Debug\killingTime.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\killingTime\Debug\killingTime.lib" /MACHINE:X86 Debug\killingTime.exe.embed.manifest.res
+         Debug\source.obj
+         killingTime.vcxproj -> H:\killingTime\Debug\killingTime.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\killingTime.unsuccessfulbuild".
+         Touching "Debug\killingTime.lastbuildstate".
+     1>Done Building Project "H:\killingTime\killingTime\killingTime.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.51

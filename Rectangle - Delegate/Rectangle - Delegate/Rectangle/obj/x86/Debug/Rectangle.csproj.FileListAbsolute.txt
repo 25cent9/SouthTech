@@ -1,0 +1,4 @@
+H:\download new materials\mta98-361\Assignments-Solutions\Lesson 2\Rectangle - Delegate\Rectangle\bin\Debug\Rectangle.exe
+H:\download new materials\mta98-361\Assignments-Solutions\Lesson 2\Rectangle - Delegate\Rectangle\bin\Debug\Rectangle.pdb
+H:\download new materials\mta98-361\Assignments-Solutions\Lesson 2\Rectangle - Delegate\Rectangle\obj\x86\Debug\Rectangle.exe
+H:\download new materials\mta98-361\Assignments-Solutions\Lesson 2\Rectangle - Delegate\Rectangle\obj\x86\Debug\Rectangle.pdb

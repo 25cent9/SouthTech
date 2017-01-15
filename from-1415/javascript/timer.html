@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>  </title>
+	<script type="text/javascript">
+	var cnt=0;
+	var pics=new Array("../dogecoin.png","../dogecoin1.png","../dogecoin2.gif","../link.jpg");
+	function cntTimer(){
+		cnt++;
+		document.getElementById('cntr').value=cnt;
+		document.getElementById('pic').src=pics[cnt];
+		if(cnt>2){
+			cnt=0;
+		}
+		
+	}
+	function stopTimer(){
+		clearInterval(runIt);
+	}
+	
+	</script>
+</head>
+
+<body>
+<form>
+	<h1><input type="text" id="cntr"readonly size="1"/></h1>
+	<input type="button" value="Start" onClick="runIt=setInterval('cntTimer()',1000)" />
+	<input type="button" value="Stop" onClick="stopTimer()" />
+</form>
+<img src="../link.jpg" width="50%" alt="link1" id="pic"/>
+</body>
+
+</html>

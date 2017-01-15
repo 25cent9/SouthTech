@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jackson College Calculator</title>
+	<script type="text/javascript">
+		/*
+		*Name: Innocent Niyibizi	
+		*Date: 10/8/14
+		*Purpose: To create a program that will gather a student's name and amount of credit hours and then display the toatal amount due.
+		*/
+		//Declaring variables
+		var hourRate=100;
+		var roomPerSemHour=1800;
+		var totalAmount=0;
+		var totHours;
+		
+		//Function calculate
+		function calculate(){
+			//Getting totHours from the form
+			 totHours=parseInt(document.getElementById('totHours').value);
+			 //Calculating totalAmount
+			 totalAmount=totHours*hourRate+roomPerSemHour*totHours;
+			 //Displaying student's name and total amount due
+			 document.write(document.getElementById('sName').value+" owes a total of:<br />$");
+			 document.write(totalAmount+"<br /> <hr />");
+		}
+	</script>
+</head>
+<body>
+	<!-- Form to collect student name and hours enrolled -->
+	<form id="studentfees" name="studentfees">
+		Student's name: <input type="text" id="sName" placeholder="First, Last"/>
+		<br />Hours enrolled: <input type="text" id="totHours" placeholder="0"/>
+		<br /><input type="button" value="Calculate" onclick="calculate()"/>
+
+	</form>
+</body>
+</html>

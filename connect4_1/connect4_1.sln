@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "connect4_1", "connect4_1\connect4_1.vcxproj", "{5E44BDAB-648E-42CC-8276-ABFE7DCB8F41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E44BDAB-648E-42CC-8276-ABFE7DCB8F41}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E44BDAB-648E-42CC-8276-ABFE7DCB8F41}.Debug|Win32.Build.0 = Debug|Win32
+		{5E44BDAB-648E-42CC-8276-ABFE7DCB8F41}.Release|Win32.ActiveCfg = Release|Win32
+		{5E44BDAB-648E-42CC-8276-ABFE7DCB8F41}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

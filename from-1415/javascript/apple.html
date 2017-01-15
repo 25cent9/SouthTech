@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Apple Classes</title>
+	<script type="text/javascript">
+		//This is a class for an apple
+		function Apple(appleType, appleColor){
+			this.type=appleType;
+			this.color=appleColor;
+			this.getInfo=getAppleInfo;
+		}
+		function getAppleInfo(){
+			return this.color+ " " + this.type + " apple";
+		}
+		var apple1= new Apple("Macintosh","red");
+		alert(apple1.type+" " +apple1.color);
+		
+		apple1.color="reddish";
+		alert(apple1.getInfo());
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

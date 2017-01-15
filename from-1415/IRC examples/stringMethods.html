@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>String Methods</title>
+	<script type="text/JavaScript">
+	/*
+		var str = "Please pass the pepper to Penny, please.";
+		var pos = str.indexOf("pepper");	//Only finds the first occurrence
+		var lio = str.lastIndexOf("please");	//Only finds the last occurrence
+		alert(pos);	//Return of -1 means that the text was not found in the given string
+		alert(lio);	//Returns the starting position of the requested text. Starts with 0
+		alert(str.search('tr'));	//Finds the first occurrence of the requested phrase in the given string. If string is not found, -1 in outputted. 
+	
+		str = "Pumpkin, Orange, Kiwi";
+		pos1 = str.indexOf("Orange");
+		alert(pos1);
+		var res = str.slice(pos1,-6);	//Positive numbers are used from the begin of the string and negative numbers are used from the end counting back
+		alert(res);
+		alert(str.slice(-10));	//One number will return the position within the string and everything after.
+
+		//Substring
+		res = str.substring(pos1, pos1+6);
+		alert(res);
+		//res1 = str.substring(50, 56);	//If the substring parameters are out of range, nothing is returned. 50 is start, 56 is where it ends 
+		//alert(res1);
+		alert(res.length);
+	*/
+		var str = "Pumpkin, Orange, Kiwi";
+		var word = "Orange";
+		pos1= str.indexOf(word);
+		len = word.length;
+		alert(str.substring(pos1, pos1+len));
+		//Replace String Content
+		str = "Please visit the art museum."
+		var n = str.replace("art", "history");
+		alert(n);
+		// Upper and lower case
+		var text = 'Hello world';
+		text = text.toUpperCase();	//to LowerCase();
+		alert(text);
+		// concat()
+		var a = "hello"
+		var b = "world"
+		text = a.concat(' ',b);
+		alert(text);
+		
+		//charAt
+	</script>
+</head>
+
+<body>
+	
+
+
+
+
+</body>
+
+</html>

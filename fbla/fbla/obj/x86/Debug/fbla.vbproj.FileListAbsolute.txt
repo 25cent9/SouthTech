@@ -1,0 +1,9 @@
+H:\fbla\fbla\bin\Debug\fbla.exe
+H:\fbla\fbla\bin\Debug\fbla.pdb
+H:\fbla\fbla\bin\Debug\fbla.xml
+H:\fbla\fbla\obj\x86\Debug\fbla.Resources.resources
+H:\fbla\fbla\obj\x86\Debug\fbla.vbproj.GenerateResource.Cache
+H:\fbla\fbla\obj\x86\Debug\fbla.exe
+H:\fbla\fbla\obj\x86\Debug\fbla.xml
+H:\fbla\fbla\obj\x86\Debug\fbla.pdb
+H:\fbla\fbla\obj\x86\Debug\fbla.Form1.resources

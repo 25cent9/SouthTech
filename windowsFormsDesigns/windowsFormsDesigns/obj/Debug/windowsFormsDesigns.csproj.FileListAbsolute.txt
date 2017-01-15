@@ -1,0 +1,10 @@
+H:\windowsFormsDesigns\windowsFormsDesigns\bin\Debug\windowsFormsDesigns.exe.config
+H:\windowsFormsDesigns\windowsFormsDesigns\bin\Debug\windowsFormsDesigns.exe
+H:\windowsFormsDesigns\windowsFormsDesigns\bin\Debug\windowsFormsDesigns.pdb
+H:\windowsFormsDesigns\windowsFormsDesigns\obj\Debug\windowsFormsDesigns.csprojResolveAssemblyReference.cache
+H:\windowsFormsDesigns\windowsFormsDesigns\obj\Debug\windowsFormsDesigns.Form1.resources
+H:\windowsFormsDesigns\windowsFormsDesigns\obj\Debug\windowsFormsDesigns.Properties.Resources.resources
+H:\windowsFormsDesigns\windowsFormsDesigns\obj\Debug\windowsFormsDesigns.csproj.GenerateResource.Cache
+H:\windowsFormsDesigns\windowsFormsDesigns\obj\Debug\windowsFormsDesigns.exe
+H:\windowsFormsDesigns\windowsFormsDesigns\obj\Debug\windowsFormsDesigns.pdb
+H:\windowsFormsDesigns\windowsFormsDesigns\obj\Debug\windowsFormsDesigns.inherited.resources

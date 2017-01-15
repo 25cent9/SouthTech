@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>  </title>
+	<script type="text/javascript">
+	var cnt=0;
+	var pics=new Array("1.png","2.png","3.png","4.png","5.png","6.png","7.png");
+	var pics2=new Array("2/1.png","2/2.png","2/3.png","2/4.png","2/5.png","2/6.png","2/7.png","2/8.png");
+	function cntTimer(){
+		cnt++;
+		document.getElementById('cntr').value=cnt;
+		document.getElementById('pic').src=pics[cnt];
+		document.getElementById('pic2').src=pics2[cnt];
+		if(cnt>5){
+			cnt=0;
+		}
+		
+	}
+	function stopTimer(){
+		clearInterval(runIt);
+	}
+	
+	</script>
+</head>
+
+<body>
+<form>
+	<h1><input type="text" id="cntr"readonly size="1"/></h1>
+	<input type="button" value="Start" onClick="runIt=setInterval('cntTimer()',100)" />
+	<input type="button" value="Stop" onClick="stopTimer()" />
+</form>
+<img width="258px" height="510px" alt="null" id="pic" src="1.png"/>
+<img width="258px" height="510px" alt="null" id="pic2" src="2/1.png"/>
+</body>
+
+</html>

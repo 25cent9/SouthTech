@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Canvas Enhancements</title>
+	<script type="text/javascript">
+		function f1(){
+			var canvas = document.getElementById("smRect");
+			var context = canvas.getContext("2d");
+			//context.fillStyle="blue";
+			/*
+			var grad=context.createLinearGradient(30,1,250,30);
+			grad.addColorStop(0.1,"green");
+			grad.addColorStop(0.9,"yellow");
+			context.fillStyle=grad;
+			context.rotate(20*Math.PI/180);
+			*/
+			canvas.font="50px Comic Sans MS";
+			context.fillText("Wow such canvas", 250, 120);
+			context.fillRect(10, 20, 200, 100);
+		}
+	</script>
+	<style type="text/css">
+	
+	</style>
+</head>
+
+<body onload="f1();">
+	<canvas id="smRect" height="300" width="500" style="color: orange; font-size: xx-large;">
+		
+
+	</canvas>
+
+</body>
+
+</html>

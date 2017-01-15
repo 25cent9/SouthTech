@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Try Catch </title>
+	<script type="text/javascript">
+	/*
+	Innocent Niyibizi
+	11/24/14	
+	*/
+	function rangeExceptions(){
+		var num1;
+		try{
+			num1=prompt("Enter a number between 1 and 100: ");
+			if(num1<1){
+				throw("Out of range, low");
+			}
+			else if(num1>100){
+				throw("Out of range, high");
+			}
+			document.write("Number is in the correct range.<br />");
+		}	
+		catch(ex){
+			if(ex=="Out of range, low"){
+				document.write("The number enterd is too low"+"<br />");
+			}
+			if(ex=="Out of range, high"){
+				document.write("The number entered is too high"+" <br />");
+			}
+		}
+		try{
+			addUp("This adds number")
+		}
+		catch(err){
+			alert("Function does not exist");
+		}
+	}
+	</script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+more="Y";
+document.write("This program tests numbers in a range.<br />");
+
+while(more.toUpperCase()=="Y"){
+	rangeExceptions();
+	more=prompt("Test another number?");
+}
+	
+</script>
+
+
+
+
+</body>
+
+</html>

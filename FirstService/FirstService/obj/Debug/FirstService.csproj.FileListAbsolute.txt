@@ -1,0 +1,9 @@
+H:\FirstService\FirstService\bin\Debug\FirstService.exe.config
+H:\FirstService\FirstService\obj\Debug\FirstService.csprojResolveAssemblyReference.cache
+H:\FirstService\FirstService\obj\Debug\FirstService.FirstService.resources
+H:\FirstService\FirstService\obj\Debug\FirstService.csproj.GenerateResource.Cache
+H:\FirstService\FirstService\bin\Debug\FirstService.exe
+H:\FirstService\FirstService\bin\Debug\FirstService.pdb
+H:\FirstService\FirstService\obj\Debug\FirstService.exe
+H:\FirstService\FirstService\obj\Debug\FirstService.pdb
+H:\FirstService\FirstService\obj\Debug\FirstService.ProjectInstaller.resources

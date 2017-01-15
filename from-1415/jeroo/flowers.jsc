@@ -1,0 +1,35 @@
+@Java
+method checkFlower(){
+   if(isFlower(HERE)){
+      pick();
+   }
+}
+method turnRight(){
+   if(isFacing(EAST)&& isWater(AHEAD)){
+      checkFlower();
+      turn(RIGHT);
+      hop();
+      checkFlower();
+      turn(RIGHT);
+   }
+}
+
+method turnLeft(){
+   if(isFacing(WEST)&& isWater(AHEAD)){
+      checkFlower();
+      turn(LEFT);
+      hop();
+      checkFlower();
+      turn(LEFT);
+   }
+}
+@@
+method main(){
+  Jeroo Adam = new Jeroo(0,0);
+  while(!Adam.isWater(AHEAD)){
+     Adam.checkFlower();
+     Adam.hop();
+     Adam.turnRight();
+     Adam.turnLeft();
+  }
+}

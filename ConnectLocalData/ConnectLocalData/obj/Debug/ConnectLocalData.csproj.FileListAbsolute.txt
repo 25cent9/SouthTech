@@ -1,0 +1,11 @@
+H:\ConnectLocalData\ConnectLocalData\bin\Debug\ConnectLocalData.exe.config
+H:\ConnectLocalData\ConnectLocalData\bin\Debug\sampleDatabase.mdf
+H:\ConnectLocalData\ConnectLocalData\bin\Debug\sampleDatabase_log.ldf
+H:\ConnectLocalData\ConnectLocalData\bin\Debug\ConnectLocalData.exe
+H:\ConnectLocalData\ConnectLocalData\bin\Debug\ConnectLocalData.pdb
+H:\ConnectLocalData\ConnectLocalData\obj\Debug\ConnectLocalData.csprojResolveAssemblyReference.cache
+H:\ConnectLocalData\ConnectLocalData\obj\Debug\ConnectLocalData.Form1.resources
+H:\ConnectLocalData\ConnectLocalData\obj\Debug\ConnectLocalData.Properties.Resources.resources
+H:\ConnectLocalData\ConnectLocalData\obj\Debug\ConnectLocalData.csproj.GenerateResource.Cache
+H:\ConnectLocalData\ConnectLocalData\obj\Debug\ConnectLocalData.exe
+H:\ConnectLocalData\ConnectLocalData\obj\Debug\ConnectLocalData.pdb

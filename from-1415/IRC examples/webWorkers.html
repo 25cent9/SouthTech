@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web Worker</title>
+	
+</head>
+<body>
+	<p>The highest prime number discovered so far is: <output id="result"></output></p>
+	<script type="text/javascript">
+		var worker = new Worker("cpworker.js");
+		worker.onmessage = function (event){
+			document.getElementById('result').textContent = event.data;
+		}
+	</script>
+
+</body>
+</html>

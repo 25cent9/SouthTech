@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Interest calculator </title>
+	<script type="text/javascript">
+	function calculate(){	
+		var startBalance;
+		var interestRate;
+		var vali;
+		var interst;
+		
+		
+		
+		function validate(num){
+			vali="T";
+			if(isNaN(num)){
+				vali='F';
+			}
+			return vali;
+		}
+		
+		vali = validate(document.getElementById('bbal').value);
+		
+		if(vali == "F"){
+			alert("Please enter a valid number for your starting balance");
+		}
+		else{
+			vali=validate(document.getElementById('intRate').value);
+			if(vali=="F"){
+				alert("Please enter a valid number for your interest rate");
+			}
+			else{
+				startBalance=parseFloat(document.getElementById('bbal').value);
+				interestRate=parseFloat(document.getElementById('intRate').value);
+				
+				interest = startBalance+startBalance*interestRate;
+				
+				document.getElementById('yrInt').value = interest;
+			}
+		}
+		
+		
+	}	
+	
+		
+	
+	</script>
+</head>
+
+<body>
+<form>
+
+<h2> Interest Calculator </h2>
+Beginning Balance: <input type="text" id="bbal" /><br />
+
+Annual interest rate (enter as a decimal - 5% is .05): <input type="text" id="intRate" /><br />
+
+<input type="button" value="Calculate Interest" onClick="calculate();"/><br /><br />
+Your new balance is: <input type="text" id="yrInt" readonly  />
+
+</form>
+</body>
+
+</html>

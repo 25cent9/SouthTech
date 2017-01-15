@@ -1,0 +1,8 @@
+c:\users\innocent\documents\visual studio 2010\Projects\CoinToss\CoinToss\bin\Debug\CoinToss.exe
+c:\users\innocent\documents\visual studio 2010\Projects\CoinToss\CoinToss\bin\Debug\CoinToss.pdb
+c:\users\innocent\documents\visual studio 2010\Projects\CoinToss\CoinToss\obj\x86\Debug\CoinToss.exe
+c:\users\innocent\documents\visual studio 2010\Projects\CoinToss\CoinToss\obj\x86\Debug\CoinToss.pdb
+H:\CoinToss\CoinToss\CoinToss\obj\x86\Debug\CoinToss.exe
+H:\CoinToss\CoinToss\CoinToss\obj\x86\Debug\CoinToss.pdb
+H:\CoinToss\CoinToss\CoinToss\bin\Debug\CoinToss.exe
+H:\CoinToss\CoinToss\CoinToss\bin\Debug\CoinToss.pdb

@@ -1,0 +1,4 @@
+﻿  banking.cpp
+e:\souttech\banking-2015-09-10\banking\banking\banking.cpp(35): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(475): note: see declaration of 'ctime'
+LINK : fatal error LNK1207: incompatible PDB format in 'E:\SoutTech\banking-2015-09-10\banking\Debug\banking.pdb'; delete and rebuild

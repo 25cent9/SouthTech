@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 2/25/15 -->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>Practice</title>
+	
+</head>
+
+<body>
+	<h1>Practice Assignment</h1>
+	<form id="form">
+		
+	</form>
+	<button onclick="showForm();" id="btn">Register Now</button>
+	<script type="text/JavaScript">
+		var form=document.getElementById('form');
+		var btn=document.getElementById('btn');
+		function showForm(){
+			form.innerHTML="Userid: <input type='text' /><br />Password: <input type='password' /><br /> Phone: <input type='text' /><br /> Name: <input type='text' /><br />Email: <input type='email' /><br />";
+			btn.innerHTML="Go Back";
+			btn.onclick= function(){ hideForm(); };
+		}
+		function hideForm(){
+			form.innerHTML="";
+			btn.innerHTML="Register Now";
+			btn.onclick= function(){ showForm(); };
+		}
+	</script>
+</body>
+
+</html>

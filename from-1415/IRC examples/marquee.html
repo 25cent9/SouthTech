@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Marquee </title>
+</head>
+<script type="text/Javascript">
+//Effect of text will be sliding the paragraph of text one pixel to the right, over and over, until the right-hand limit of 300 pixels is reached
+//At that point, restart the animation all the way to the left.
+	var paragraph;
+	function move_para(){
+		next=current+ "px";
+		current +=1;
+		if(current>300){
+			current = 0;
+		}
+		paragraph.style.left=next;
+			//Pause for 18 milliseconds before the next move
+		var  rate = document.getElementById('rate').value;
+		setTimeout(move_para, rate);
+		//Recursion - calling itself 
+		
+	}
+	function init(){
+		paragraph = document.getElementById('original');
+		paragraph.style.position="absolute";
+		current=0;
+		move_para();
+	}
+</script>
+<body onload="init();">
+<h1>Animation with JavaScript</h1>
+<p id="original">This text will scroll</p>
+	<form>
+		<input type="number" id="rate" value="18" min="5" max="100" />
+	</form>
+</body>
+
+</html>

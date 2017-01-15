@@ -1,0 +1,63 @@
+
+body{
+	background: url("../pics/paper1.jpg");
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12pt;
+}
+border{
+	color: rgb(74,84,05);
+}
+div{
+	border: 2px solid rgb(74,84,05);
+	float: left;
+	display: inline;
+}
+.itinerary{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+	border: 2px solid black;
+	padding: 5px;
+}
+.itinerary2{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+	border: 2px solid black;
+	float: right;
+	padding: 5px;
+}
+
+.castle{
+	float: left;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+.map{
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	background-color: rgb(74,84,05);
+	text-decoration: underline;
+	text-decoration: overline;
+	color: white;
+}
+#main{
+	height: 100%;
+	display: inline;
+	width: 35%;
+}
+table{
+	text-align: center;
+	margin: auto;
+}

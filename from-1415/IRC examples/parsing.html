@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title>parsing</title>
+	<script type="text/javascript">
+		//The next statement needs to appear on a single line; 
+		var sample_data = "Mobil-17: 3.49; Kroger-03: 3.36; Exxon-01: 3.59; Kroger-04: 3.49; Valero-A: 3.41; Chevron-01: 3.52"; 
+		var of_interest = "Kroger-04";
+		// sample_data is an example of a typical piece of
+		// structured data: a string with parts separated
+		// by semi-colons, where each of the parts has two
+		// subparts separated by a colon. Many other formats
+		// are possible. To parse this particular format,
+		// init() splits on two distinct separators.
+		function init(){
+			var para_Obj = document.getElementById('para');
+			var data_list = sample_data.split(";");
+			for(j=0; j<data_list.length; j++){
+				parts = data_list[j].split(':');
+				var site = parts[0].trim();
+				if(site == of_interest){
+					var msg = "Given the sample data '"+sample_data +"', this program parsed out the price $" + parts[1].trim() + " for the " + site + " site.";
+					para_Obj.innerHTML = msg;
+				}
+			}
+		}
+	</script>
+</head>
+
+<body onload="init();">
+	<h1>Parsing Complex Data</h1>
+	<p id="para">Welcome</p>
+
+
+
+
+</body>
+
+</html>

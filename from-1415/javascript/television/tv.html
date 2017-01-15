@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Televison </title>
+	<script type="text/javascript">
+		//Creating class for TV
+		function Tv(Manufacturer, ScreenSize, RetailPrice){
+			//Constructors
+			this.tvManufacturer=Manufacturer;
+			this.tvScreenSize=ScreenSize;
+			this.tvRetailPrice=RetailPrice;
+			this.info=displayInfo;
+			this.price=setPrice;
+			
+		}
+		//Creating a new Tv called "myTv"
+		var myTv=new Tv("Sony","52in","$1299.00");
+		
+		
+		myTv.info();
+		myTv.price("$999.00");
+		myTv.info();
+		
+		//Function to change tvRetailPrice to the price passed through
+		function setPrice(prc){
+			this.tvRetailPrice=prc;
+		}
+		
+		//Displaying the info for myTv
+		function displayInfo(){
+			alert(myTv.tvManufacturer+" "+myTv.tvScreenSize+" "+myTv.tvRetailPrice);
+		}
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

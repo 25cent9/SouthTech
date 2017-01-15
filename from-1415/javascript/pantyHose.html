@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi 11/3/14-->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Leggs </title>
+	<script type="text/javascript">
+	function getSize(){
+	var userWeight=document.getElementById('weight').value;
+	var userHeight=document.getElementById('height').value;
+	var X=0;
+	var Y=0;
+	var size="";
+	var vali;
+	var nums=/^[0-9]+$/;
+	var alpha = /^[a-zA-Z]+$/;
+	
+	validate(userHeight,"Please enter a valid height");
+	validate(userWeight,"Please enter a valid weight");
+
+		
+		if(vali=="T"){
+			X=userHeight/10.0-userWeight/50.0-2.4;
+			Y=userHeight/4.0+userWeight/20.0-20.5;
+			X=parseInt(X);
+			Y=parseInt(Y);
+			findSize(X,Y);
+		}
+		
+		function validate(value,msg){
+			if(!isNaN(value) && value.length!=0 && value>0 && !value.match(alpha)){
+				vali="T";
+				parseFloat(value);
+				return vali;
+			}
+			else{
+				vali="F";
+				alert(msg);
+			}
+		}	
+	
+	}
+
+	function findSize(X,Y){
+		if(Y==0 && X==1){
+			document.getElementById('size').value="A";
+		}
+		else if(Y==1 && X==1){
+			document.getElementById('size').value="B";
+		}
+		else if(Y==2 && X==1){
+			document.getElementById('size').value="C";
+		}
+		else if(Y==3 && X==1){
+			document.getElementById('size').value="D";
+		}
+		else if(Y==2 && X==0){
+			document.getElementById('size').value="E";
+		}
+		else if(Y==3 && X==0){
+			document.getElementById('size').value="F";
+		}
+		else{
+			alert("Size unavaliable");
+		}
+	}
+	</script>
+</head>
+
+<body>
+<form>
+<h1>Leggs Panty Hose</h1>
+	Please enter height in inches: <input type="text" id="height"/><br />
+	Please enter weight pounds: <input type="text" id="weight"/><br />
+	<input type="button" value="Get size" onClick="getSize();"/><br />
+	Your size: <input type="text" id="size" size="1" readonly />
+
+</form>
+
+</body>
+
+</html>

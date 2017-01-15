@@ -1,0 +1,5 @@
+H:\chapter3Coding\chapter3Coding\bin\Debug\chapter3Coding.exe
+H:\chapter3Coding\chapter3Coding\bin\Debug\chapter3Coding.pdb
+H:\chapter3Coding\chapter3Coding\obj\x86\Debug\chapter3Coding.exe
+H:\chapter3Coding\chapter3Coding\obj\x86\Debug\chapter3Coding.pdb
+H:\chapter3Coding\chapter3Coding\obj\x86\Debug\chapter3Coding.csprojResolveAssemblyReference.cache

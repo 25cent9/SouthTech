@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Transition</title>
+	<script type="text/javascript">
+		
+	</script>
+	<style>
+		#wrapper{
+			transition-property: opacity;
+			transition-duration: 3s;
+			transition-delay: 1s;
+			transition-timing-function: linear;
+		}
+		#wrapper #before, #wrapper:hover #after{
+			opacity: 1;
+		}
+		#wrapper:hover #before, #wrapper #after{
+			opacity: 0;
+		}
+		div#strech{
+			width: 100px;
+			height: 75px;
+			background-color: magenta;
+			
+			-webkit-transition: width 2s;
+			transition: width 2s;
+		}
+		div#strech:hover{
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="before">Now you see it</div>
+		<div id="after">Now you dont</div>
+	</div>
+	<div id="strech"> </div>
+</body>
+</html>

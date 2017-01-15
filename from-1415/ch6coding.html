@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- Innocent Niyibizi -->
+<html>	
+	
+<head>
+	<meta charset="utf-8">
+	<title> Checkout </title>
+	<style>
+	<!--
+		h1{
+			text-align: center;
+		}
+		span{
+			margin-left: 25px;
+			font-weight: bold;
+			font-size: smaller;
+		}
+		.line{
+			border: 5px solid black;
+		}
+	-->
+	</style>
+</head>
+
+<body>
+
+<h1>
+	Textbooks.com Checkout
+</h1>
+
+<form action="http://www.hashemian.com/tools/form-post-tester.php/in123" method="post">
+<input type="hidden" name="email" value="address textbooks@tb.com"/>
+<input type="hidden" name="formName" value="Textbook Billing" />
+<table>
+	<tr>
+		<td colspan="2">
+			<p style="font-weight: bold" >
+			Safe & Secure: Billing and Shipping Details
+			</p>
+			Shipping Method
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<input type="radio" name="shipmethod" value="ground"/>UPS Ground: $4.99<br />
+		<span>Est. Arrival: Mon, October 27, 2008</span>
+		</td>
+		<td>
+		<input type="radio" name="shipmethod" value="nextair"/>UPS Next Day Air: $19.98<br />
+		<span>Est. Arrival: Thu, October 23, 2008</span>
+		</td>
+	</tr>
+	<tr class="line">
+		<td>
+			<input type="radio" name="shipmethod" value="2day"/>UPS 2nd Day Air: $11.99<br />
+			<span>Est. Arrival: Fri, October 24, 2008</span>
+		</td>
+		<td>
+			<input type="radio" name="shipmethod" value="priomail"/>UPS Priority Mail: $7.20<br />
+			<span>Est. Arrival: not available</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<hr />
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<p>BILLING ADDRESS</p>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			First Name<br />
+			<input type="text" name="billfname" size="18" required/>
+		</td>
+		<td>
+			Last Name<br />
+			<input type="text" name="billlname" size="18" required/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Address<br />
+			<input type="text" name="billadd" size="18" required/>
+		</td>
+		<td>
+			Address 2/Apt. Number<br />
+			<input type="text" name="billadd2" size="18" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			City<br />
+			<input type="text" name="billcity" size="18" required/>
+		</td>
+		<td>
+			State<br />
+			<select name="billstate" required>
+				<option>(please select)</option>
+				<option>ALABAMA</option>
+				<option>COLORADO</option>
+				<option>FLORIDA</option>
+				<option>IDAHO</option>
+				<option>MASSACHUSETTS</option>
+				<option>MISSOURI</option>
+				<option>OKLAHOMA</option>
+				<option>SOUTH CAROLINA</option>
+				<option>TENNESSEE</option>
+				<option>VIRGINIA</option>
+				<option>WYOMING</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Zip(USA only)<br />
+			<input type="text" name="billzip" size="18" required/>
+		</td>
+		<td>
+			Phone<br />
+			<input type="text" name="billphone" size="18" pattern="[0-9]{10}" required title="XXX-XXX-XXXX" maxlength="10"/> <br />
+			<span style="font-weight: bold; margin-left: 0px">i.e, XXX-XXX-XXXX</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			
+			<hr style="border: 2px solid black"/>
+			
+		</td>
+	</tr>
+	<tr>
+		<td  colspan="2">
+			Is your shipping address the same as the above?
+			<input type="radio" name="shipaddres" value="yes" />Yes
+			<input type="radio" name="shipaddres" value="no" />No
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<hr style="border: 2px solid black"/>
+			
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<p>SHIPPING ADDRESS</p>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			First Name<br />
+			<input type="text" name="shipfname" size="18"/>
+		</td>
+		<td>
+			Last Name<br />
+			<input type="text" name="shiplname" size="18"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Address<br />
+			<input type="text" name="shipadd" size="18"/>
+		</td>
+		<td>
+			Address 2/Apt. Number<br />
+			<input type="text" name="shipadd2" size="18"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			City<br />
+			<input type="text" name="shipcity" size="18"/>
+		</td>
+		<td>
+			State<br />
+			<select name="shipstate">
+				<option>(please select)</option>
+				<option>ALABAMA</option>
+				<option>COLORADO</option>
+				<option>FLORIDA</option>
+				<option>IDAHO</option>
+				<option>MASSACHUSETTS</option>
+				<option>MISSOURI</option>
+				<option>OKLAHOMA</option>
+				<option>SOUTH CAROLINA</option>
+				<option>TENNESSEE</option>
+				<option>VIRGINIA</option>
+				<option>WYOMING</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Zip<br />
+			<input type="text" name="shipzip" size="18"/>
+		</td>
+		<td>
+			Phone<br />
+			<input type="text" name="shipphone" size="18" pattern="[0-9]{10}" title="XXX-XXX-XXXX" maxlength="10"/> <br />
+			<span style="font-weight: bold; margin-left: 0px">i.e, XXX-XXX-XXXX</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+
+			<hr style="border: 2px solid black"/>
+			
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			Credit Card Information <br />
+			Card Type<br />
+				<select name="cardtype" required>
+					<option>Visa</option>
+					<option>MasterCard</option>
+					<option>Discovery</option>
+					<option>American Express</option>
+				</select> <br />
+			Card Number<br />
+			<input type="text" name="cardnumber" maxlength="12" pattern="[0-9]{12}" title required/><br />
+			Name On Card<br />
+			<input type="text" name="cardname" required/><br />
+			Card Verification Number<br />
+			<input type="text" size="5" maxlength="5" required/><br />
+			Expiration Date:<br />
+				<select name="crdexmnth" required>
+					<option> </option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+				<select name="crdexyr" required>
+					<option> </option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+				</select> <br />
+			<input type="checkbox" name="savecrd" value="yes" />Save this card? <br />
+			<span style="font-size: smaller; margin-left: 0px; font-weight: normal">(Security Code (CVV) will NOT be saved)</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<hr />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<p>
+				Email Subscriptions
+			</p>
+			<p style="margin-left: 20px">Get exclusive discounts, promotions & more.<br />
+			<input type="checkbox" name="emailsub" value="yes" /> Sign me up for your money-saving newsletter.</p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<hr />
+		</td>
+	</tr>
+</table>
+<input type="submit" value="Submit Order" />
+<input type="reset" value="Reset Order" />
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+@font-face{
+	font-family: text;
+    src: url(../fonts/bulletto_killa/BullettoKilla.ttf);
+}
+body{
+	background-color: #66FFFF;
+	font-family: text;
+}
+#sideRight{
+	width: 15%;
+	float: right;
+	display: inline;
+}
+#sideLeft{
+	width: 15%;
+	float: left;
+	display: inline;
+}
+#main{
+	display: inline;
+	width: 60%;
+	float: left;
+}
+li{
+	display: inline;
+	margin: 5px;
+}
+a{
+	text-decoration: none;
+	color: #58315D;
+}
+a:hover{
+	font-size: xx-large;
+}
+header,footer{
+	text-align: center;
+}
+footer>p{
+	font-size: small;
+}
+#frame{
+	text-align: center;
+}
+iframe{
+	width: 100%;
+	height: 800px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A-1 Appliance</title>
+	<script type="text/javascript">
+	/*
+	*Name: Innocent Niyibizi	
+	*Date: 10/8/14
+	*Purpose: To create a program that will calculate the inventory of dishwashers that a store has after one month
+	*/
+		//Declaring variables
+		var numInStock=0;
+		var numPurchased=0;
+		var numSold=0;
+		var numLeft=0;
+			
+			//Function to calculate the inventory
+			function stock(){
+			
+				//Getting the input from the form
+				numInStock=parseInt(document.getElementById('currentInventory').value);
+				numPurchased=parseInt(document.getElementById('stockPurchased').value);
+				numSold=parseInt(document.getElementById('stockSold').value);
+				
+				//Calculating the remaing stock
+				numLeft=numInStock+numPurchased-numSold;
+				
+				//Changing the value of the remaing stock text box
+				document.getElementById('remainStock').value=numLeft;
+			}
+	</script>
+</head>
+<body>
+	<!-- Form to collect data -->
+	<form id="inventory" name="inventory">
+	What is the current amount of dishwashers in stock? :<input type="text" size="2" id="currentInventory"/><br />
+	How many dishwashers were purchased for your stock?: <input type="text" size="2" id="stockPurchased"/><br />
+	How many dishwashers were sold?: <input type="text" size="2" id="stockSold"/><br />
+	<input type="button" value="Take Inventory!" onclick="stock()"/><br />
+	Remaining dishwashers: <input type="text" size="2" readonly  id="remainStock"/>
+	</form>
+</body>
+</html>
